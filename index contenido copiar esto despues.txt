@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unmasked Portfolio Maker</title>
+    <link rel="shortcut icon" href="Unmasked_Favicon.svg" type="image/x-icon"> 
+</head>
+
+<body>
+    <main>
+
+        <header><img src="img/Unmasked_Full.svg" alt="Logo de página web. Un pequeño dibujo de una máscara kitsune"
+                width="118" height="118">
+                <img src="img/KitsuneHeader.svg" alt="imagen con letras en japones" height="108" width="802">
+            <nav> </nav>
+        </header>
+
+        <body>
+            <picture>
+                <img src="img/portimgTest.png"
+                    alt="imagen de fondo de la web, aqui se veen algunos portfolios y contenido multimedia que estetiza la página."
+                    width="" height="590">
+            </picture>
+        </body>
+        <footer>
+            <p>1950-2023 Copyright ©</p>
+            <p>Todos los derechos reservados blablabla</p>
+        </footer>
+    </main>
+</body>
+
+</html>
