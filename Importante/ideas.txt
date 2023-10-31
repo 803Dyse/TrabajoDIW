@@ -1,3 +1,7 @@
+###       RECUERDA DE MIRAR EL DISCORD DE APUNTES,                           ###
+###       ALLI PONGO CONTENIDO MULTIMIDEA, IDEAS Y                            ###
+###       ENLACES A COSAS QUE SEGURAMENTE ME INTERESARAN     ###
+
 Personalizar la pagina de error 403, 404 etc
 Una seccion(pagina html) para recuperar contraseña/usuario, /// Una transicion de la propria pagina de login que saca un card al lado de la misma, donde muestra otro formulario para recuperar la contraseña/usuario
 poner un iconito y un boton que acceda al whatsapp de la empresa, lo mismo para instagram, correo electronic
