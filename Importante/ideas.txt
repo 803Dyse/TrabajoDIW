@@ -1,5 +1,5 @@
-###       RECUERDA DE MIRAR EL DISCORD DE APUNTES,                           ###
-###       ALLI PONGO CONTENIDO MULTIMIDEA, IDEAS Y                            ###
+###       RECUERDA DE MIRAR EL DISCORD DE APUNTES,           ###
+###       ALLI PONGO CONTENIDO MULTIMIDEA, IDEAS Y           ###
 ###       ENLACES A COSAS QUE SEGURAMENTE ME INTERESARAN     ###
 
 Personalizar la pagina de error 403, 404 etc
