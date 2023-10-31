@@ -1,0 +1,2 @@
+Personalizar la pagina de error 403, 404 etc
+Una seccion(pagina html) para recuperar contraseña/usuario, /// Una transicion de la propria pagina de login que saca un card al lado de la misma, donde muestra otro formulario para recuperar la contraseña/usuario
