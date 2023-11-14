@@ -1,6 +1,6 @@
 * {
   margin: 2px;
-  border-style: solid;
+  border-style: none;
   border-width: 1.7px;
 }
 
@@ -26,19 +26,58 @@
   border-style: solid;
 }
 
-/*
- Aqui utilizaré el posicionamento de las imagenes logo y del las letras en japones, con todas sus propriedades.
- */
-
-
-
-.botonesHeader {
-  text-align: right; /* Alinea los botones a la derecha */
-  margin-left: 100px; /* Establece el margen izquierdo de 100px */
-  margin-top: -30px;
+/*Posicionamento de la imagen con letras japonesas al centro de la cabecera.*/
+#KitsuneHeaderID {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 20px);
+  z-index: 1;
 }
 
-/* Estilos para los botones si es necesario */
-.botonesHeader button {
-  margin-left: 5px; /* Espacio entre los botones */
+/* Estilos para el menu hamburguesa
+*/
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  /* The size of the SVG defines the overall size */
+  height: 3em;
+  /* Define the transition for transforming the SVG */
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+  /* Define the transition for transforming the Stroke */
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+/*Aqui estoy posicinando el menu hamburguesa para que esté arriba y orientado hacia la derecha.*/
+#header .hamburger {
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
