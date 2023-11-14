@@ -1,8 +1,0 @@
-##### LEA ESTO #####
-
-Aqui dejaré algunas observaciones que considero importante para el desarollo de este proyecto.
-
-* La resolución que trabajaré con los dispositivos mobiles será la más utilizada actualmente, 360x640 Vertical // 640x360 horizontal
-* Utilizaré la resolución nativa actual para monitores de 1920x1080
-
-PD: Decidi quitar de momento la implementación de un diseño para pantallas de tipo tablet, de momento dejará de hacer parte del proyecto, pero si veo que hay buen progreso, volveré a añadirla y a lo mejor pongo unas cuantas más.
