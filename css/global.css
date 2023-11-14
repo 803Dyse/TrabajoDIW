@@ -34,6 +34,45 @@
   z-index: 1;
 }
 
+button {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.suscribirse {
+  background-color: #5c62b0;
+  color: #ffffff;
+}
+
+.registrarse {
+  background-color: #88ecee;
+  color: #ffffff;
+}
+
+body button {
+  position: ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+body button {
+  position: ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
 /* Estilos para el menu hamburguesa
 */
 .hamburger {
