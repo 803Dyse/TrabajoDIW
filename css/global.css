@@ -36,40 +36,23 @@
 
 button {
   background-color: #ffffff;
-  border: none;
+  border: 2px solid #5c62b0;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
   cursor: pointer;
 }
 
 .suscribirse {
-  background-color: #5c62b0;
-  color: #ffffff;
+  width: 100px;
+  height: 30px;
 }
 
 .registrarse {
-  background-color: #88ecee;
-  color: #ffffff;
+  width: 150px;
+  height: 40px;
 }
 
-body button {
-  position: ;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-body button {
-  position: ;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 
 
