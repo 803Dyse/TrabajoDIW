@@ -1,37 +1,39 @@
+/*Contenedor que manipula toda la area del body, es decir, del contenido principal de la página.*/
+.container {
+  border: solid red 1px;
+  margin: 0;
+  overflow-x: hidden;
+  background-image: url('../img/');
+}
 
+/*Aqui tocamos los botones del body*/
 button {
-    background-color: #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  .suscribirse {
-    background-color: #5c62b0;
-    color: #ffffff;
-  }
-  
-  .registrarse {
-    background-color: #88ecee;
-    color: #ffffff;
-  }
-  
-  body button {
-    position: ;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  
-  body button {
-    position: ;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.suscribirse {
+  background-color: grey;
+  color: #ffffff;
+}
+
+.registrarse {
+  background-color: grey;
+  color: #ffffff;
+}
+
+#contenedorBotones {
+  /*Quiero que estos botones esten arriba a la izquierda con grid.*/
+  position: relative;
+  margin-top: 5%;
+  margin-left: 5%;
+  /*Ahora quiero que cada boton esté uno arriba del otro, este div solo controla 2 botones.*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  margin-bottom: 60%;
+}
+

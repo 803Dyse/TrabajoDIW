@@ -15,16 +15,7 @@
   border-style: solid;
 }
 
-#footer {
-  background-color: #88ecee;
-  grid-row-start: 6;
-  grid-column-start: 1;
 
-  grid-row-end: 7;
-  grid-column-end: 2;
-
-  border-style: solid;
-}
 
 /*Posicionamento de la imagen con letras japonesas al centro de la cabecera.*/
 #KitsuneHeaderID {
@@ -33,7 +24,6 @@
   left: calc(50% - 20px);
   z-index: 1;
 }
-
 
 
 
@@ -83,4 +73,16 @@
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+/*FOOTER*/
+#footer {
+  background-color: #88ecee;
+  grid-row-start: 6;
+  grid-column-start: 1;
+
+  grid-row-end: 7;
+  grid-column-end: 2;
+
+  border-style: solid;
 }
