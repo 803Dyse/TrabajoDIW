@@ -1,32 +1,105 @@
 /*Contenedor que manipula toda la area del body, es decir, del contenido principal de la página.*/
 .container {
-  border: solid red 1px;
   margin: 0;
   overflow-x: hidden;
-  background-image: url('../img/');
 }
 
+/*
+ _____ _ _         _                 _           _           
+|_   _(_) |       | |               (_)         | |          
+  | |  _| |_ _   _| | ___  ___       _ _ __   __| | _____  __
+  | | | | __| | | | |/ _ \/ __|     | | '_ \ / _` |/ _ \ \/ /
+  | | | | |_| |_| | | (_) \__ \     | | | | | (_| |  __/>  < 
+  \_/ |_|\__|\__,_|_|\___/|___/     |_|_| |_|\__,_|\___/_/\_\                                
+*/
+#tituloIndex {
+  font-size: 25px;
+  color: #2c84fa;
+  margin-left: 40%;
+}
+
+#tituloIndexDos {
+  font-size: 25px;
+  color: #2c84fa;
+  margin-left: 20%;
+}
+
+/*Este codigo es animacion de slide hacia la izquierda, para el primer texto del indice*/
+.slide-left {
+  animation: slide-left 0.9s both;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+/*Este codigo es animacion de slide hacia la derecha, para el segundo texto del indice*/
+.slide-right {
+  animation: slide-right 0.9s both;
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+
+/*
+ _           _                        
+| |         | |                       
+| |__   ___ | |_ ___  _ __   ___  ___ 
+| '_ \ / _ \| __/ _ \| '_ \ / _ \/ __|
+| |_) | (_) | || (_) | | | |  __/\__ \
+|_.__/ \___/ \__\___/|_| |_|\___||___/                                                                
+*/
 /*Aqui tocamos los botones del body*/
-button {
-  background-color: #ffffff;
-  border-radius: 5px;
+#suscribirse,
+#registrarse {
   padding: 5px;
+  border-radius: 17px;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  background-color: #161616;
+  border: solid 0.5px #f9aef9;
+
+  color: #ffa0ff;
+  width: 170px;
+}
+#suscribirse:hover,
+#registrarse:hover {
+  background-color: #6c0474;
+
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
 }
 
-.suscribirse {
-  background-color: grey;
-  color: #ffffff;
+#suscribirse:active,
+#registrarse:active {
+  background-color: #9b3fa1;
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateX(5px);
+  transition: 100ms;
 }
 
-.registrarse {
-  background-color: grey;
-  color: #ffffff;
+#registrarse {
+  margin-top: 8px;
 }
 
 #contenedorBotones {
   /*Quiero que estos botones esten arriba a la izquierda con grid.*/
   position: relative;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-left: 5%;
   /*Ahora quiero que cada boton esté uno arriba del otro, este div solo controla 2 botones.*/
   display: flex;
@@ -34,6 +107,37 @@ button {
   justify-content: space-between;
   align-items: flex-start;
   height: auto;
-  margin-bottom: 60%;
+  margin-bottom: 10%;
 }
 
+
+/*
+______                                _                              _     _ _      
+| ___ \                              (_)                            | |   (_) |     
+| |_/ /___  ___ _ __   ___  _ __  ___ ___   _____    _ __ ___   ___ | |__  _| | ___ 
+|    // _ \/ __| '_ \ / _ \| '_ \/ __| \ \ / / _ \  | '_ ` _ \ / _ \| '_ \| | |/ _ \
+| |\ \  __/\__ \ |_) | (_) | | | \__ \ |\ V /  __/  | | | | | | (_) | |_) | | |  __/
+\_| \_\___||___/ .__/ \___/|_| |_|___/_| \_/ \___|  |_| |_| |_|\___/|_.__/|_|_|\___|
+               | |                                                                  
+               |_|                                                                  
+*/
+/* Ejemplo de media query para dispositivos móviles */
+@media only screen and (max-width: 640px) {
+  .container {
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../img/fondoMobileIndex.jpeg"); /* Ajusta esto según tus necesidades */
+    filter: blur(3.4px); /* Ajusta el valor de blur según tu preferencia */
+  }
+}

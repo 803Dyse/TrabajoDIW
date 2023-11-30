@@ -1,34 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* Apply 2px margin and no border to all elements */
 * {
+  font-family: "Open Sans", sans-serif;
   margin: 2px;
   border-style: none;
   border-width: 1.7px;
 }
 
+/*
+ _                    _           
+| |                  | |          
+| |__   ___  __ _  __| | ___ _ __ 
+| '_ \ / _ \/ _` |/ _` |/ _ \ '__|
+| | | |  __/ (_| | (_| |  __/ |   
+|_| |_|\___|\__,_|\__,_|\___|_|   
+*/
+/* Define header style */
 #header {
-  background-color: #5c62b0;
+  background-color: #5c62b0; /* Set header background color */
   grid-row-start: 1;
-  grid-column-start: 1;
-
+  grid-column-start: 1; /* Position header in the grid */
   grid-row-end: 2;
-  grid-column-end: 2;
-
-  border-style: solid;
+  grid-column-end: 2; /* Size header in the grid */
+  border-style: solid; /* Set header border style */
 }
 
-
-
-/*Posicionamento de la imagen con letras japonesas al centro de la cabecera.*/
+/* Posicionamento de la imagen con letras japonesas al centro de la cabecera. */
 #KitsuneHeaderID {
   position: absolute;
   top: 20px;
   left: calc(50% - 20px);
   z-index: 1;
+  margin-top: 4%;
 }
 
-
-
-/* Estilos para el menu hamburguesa
-*/
+/* Estilos para el menu hamburguesa */
 .hamburger {
   cursor: pointer;
 }
@@ -46,7 +53,7 @@
 
 .line {
   fill: none;
-  stroke: white;
+  stroke: black;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 3;
@@ -75,14 +82,48 @@
   top: 20px;
 }
 
+/*
+ _               _       
+| |             | |      
+| |__   ___   __| |_   _ 
+| '_ \ / _ \ / _` | | | |
+| |_) | (_) | (_| | |_| |
+|_.__/ \___/ \__,_|\__, |
+                    __/ |
+                   |___/ 
+*/
+/* Selector del body, de momento solo utilizamos para definir un color de fondo. */
+body {
+  background-color: #333333;
+}
+
+/*
+  __            _            
+ / _|          | |           
+| |_ ___   ___ | |_ ___ _ __ 
+|  _/ _ \ / _ \| __/ _ \ '__|
+| || (_) | (_) | ||  __/ |   
+|_| \___/ \___/ \__\___|_|   
+*/
 /*FOOTER*/
 #footer {
-  background-color: #88ecee;
   grid-row-start: 6;
   grid-column-start: 1;
-
   grid-row-end: 7;
   grid-column-end: 2;
+  text-align: center;
+  position: relative;
+  color: #ffa0ff;
+  font-size: 12px;  background: url("../img/fondoFooter.png");
 
-  border-style: solid;
+
+}
+
+
+
+/*Aqui juntamos un poquito los parrafos del footer para que sea algo mas discreto.*/
+#txtFooter1,
+#txtFooter2,
+#txtFooter3 {
+  margin: -3px;
 }
