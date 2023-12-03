@@ -13,15 +13,20 @@
   \_/ |_|\__|\__,_|_|\___/|___/     |_|_| |_|\__,_|\___/_/\_\                                
 */
 #tituloIndex {
+ 
+    -webkit-text-stroke: 0.5px #161616;
+  
+  margin-top: 28px;
   font-size: 25px;
-  color: #2c84fa;
+  color: #f9aef9;
   margin-left: 40%;
 }
-
+  
 #tituloIndexDos {
   font-size: 25px;
   color: #2c84fa;
   margin-left: 20%;
+  margin-bottom: 28;
 }
 
 /*Este codigo es animacion de slide hacia la izquierda, para el primer texto del indice*/
@@ -48,7 +53,6 @@
     transform: translateX(100px);
   }
 }
-
 
 /*
  _           _                        
@@ -99,18 +103,38 @@
 #contenedorBotones {
   /*Quiero que estos botones esten arriba a la izquierda con grid.*/
   position: relative;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 5%;
+  margin-bottom: 4%;
   /*Ahora quiero que cada boton esté uno arriba del otro, este div solo controla 2 botones.*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   height: auto;
-  margin-bottom: 10%;
 }
 
 
+
+#flechaAbajo svg {
+
+  transition: transform 0.6s;
+
+}
+#flechaAbajo svg:hover {
+  transform: rotateY(180deg);
+
+}
+
+#flechaAbajo{
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* 
 /*
 ______                                _                              _     _ _      
 | ___ \                              (_)                            | |   (_) |     
