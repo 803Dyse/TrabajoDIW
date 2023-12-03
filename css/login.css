@@ -1,0 +1,27 @@
+#titulo1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+#contenedorLogin {
+    border: solid green 1px;
+}
+
+#contenedorLogin>form{
+    background-color: #161616;
+}
+
+.inputTxt{
+    border: solid #621e9a 1px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+}
+
+form>h2 {
+    display: flex;
+    justify-content: center;
+}

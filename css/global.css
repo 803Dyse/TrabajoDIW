@@ -115,7 +115,7 @@ body {
   position: relative;
   color: #ffa0ff;
   font-size: 12px;  background: url("../img/fondoFooter.png");
-
+margin-top: 3px;
 
 }
 
@@ -125,5 +125,6 @@ body {
 #txtFooter1,
 #txtFooter2,
 #txtFooter3 {
-  margin: -3px;
+  /*margin: -3px;
+  Esta propriedad esta mal, hace lo que quiero, que es juntar los 3 p que tengo en footer pero, me come un poco del contenedor de arriba, por lo cual no la borro pero queda avisado para buscar una solucion y alternativa a esto.*/
 }

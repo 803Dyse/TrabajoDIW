@@ -145,7 +145,6 @@
             "contenedor2p1 imgContenedor2"
             "contenedor2p2 imgContenedor2";
             grid-template-rows: 1fr 1fr;
-  border: solid black 1px;
 }
 #contenedor2p1{
   display: grid;
@@ -162,7 +161,6 @@
 #imgContenedor2 {
   display: grid;
   grid-area: imgContenedor2;
-  border: solid red 1px;
 }
 
 #tituloParte2Index{
