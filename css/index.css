@@ -127,12 +127,47 @@
 }
 
 #flechaAbajo{
-  margin-top: 20px;
   width: 100%;
   text-align: center;
 }
 
 
+/*
+   ___           _         _        __           _            
+  / _ \__ _ _ __| |_ ___  (_)_ __  / _| ___ _ __(_) ___  _ __ 
+ / /_)/ _` | '__| __/ _ \ | | '_ \| |_ / _ \ '__| |/ _ \| '__|
+/ ___/ (_| | |  | ||  __/ | | | | |  _|  __/ |  | | (_) | |   
+\/    \__,_|_|   \__\___| |_|_| |_|_|  \___|_|  |_|\___/|_|   
+*/
+#contenedor2 {
+  display: grid;
+  grid-template-areas: 
+            "contenedor2p1 imgContenedor2"
+            "contenedor2p2 imgContenedor2";
+            grid-template-rows: 1fr 1fr;
+  border: solid black 1px;
+}
+#contenedor2p1{
+  display: grid;
+  grid-area: contenedor2p1;
+  border: solid red 1px;
+}
+#contenedor2p2{
+  display: grid;
+  grid-area: contenedor2p2;
+  border: solid red 1px;
+
+}
+
+#imgContenedor2 {
+  display: grid;
+  grid-area: imgContenedor2;
+  border: solid red 1px;
+}
+
+#tituloParte2Index{
+  font-size: 22px;
+}
 
 /* 
 /*
