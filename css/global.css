@@ -82,6 +82,21 @@
   top: 20px;
 }
 
+/* Añade estilos para quitar los puntos de los elementos de la lista */
+#menuList {
+  list-style: none;
+  padding: 0;
+}
+
+/* Ajusta la posición del menú */
+#menuHamburguer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+
 /*
  _               _       
 | |             | |      

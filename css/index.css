@@ -74,7 +74,6 @@
   transition: all 0.5s ease;
   background-color: #161616;
   border: solid 0.5px #f9aef9;
-
   color: #ffa0ff;
   width: 170px;
 }
@@ -97,6 +96,16 @@
 
 #registrarse {
   margin-top: 8px;
+}
+
+#registrarse > a,
+#registrarse > a:visited,
+#registrarse > a:active,
+#suscribirse > a,
+#suscribirse > a:visited,
+#suscribirse > a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 #contenedorBotones {
