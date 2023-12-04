@@ -1,5 +1,6 @@
 form {
-  margin-top: 10%;
+  background-color: #161616;
+  margin-top: 15%;
   margin-bottom: 10%;
   border: solid red 1px;
 }
@@ -10,18 +11,27 @@ form > h2 {
   margin-bottom: 6%;
 }
 
-.contenedorInput{
-    display: flex;
-    justify-content: center;
-    margin-right: 10%;
-    border: solid green 1px;
-    margin-bottom: 3%;
+.contenedorInput {
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
+  border: solid green 1px;
+  margin-bottom: 3%;
 }
 
-#btnRegistrar{
+#msjEresMiembro{
+  display: flex;
+  font-size: 10px;
+  margin-top: 10%;
+  border: solid red 1px;
+}
+#btnRegistrar {
+  display: flex;
+  align-self: center;
+  margin: 0 auto;
+  margin-top: 15%;
+}
 
-display: flex;
-align-self: center;
-margin: 0 auto;
-margin-top: 15%;
+#footer {
+  margin-top: 25%;
 }
