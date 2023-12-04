@@ -194,7 +194,7 @@ ______                                _                              _     _ _
     right: 0;
     bottom: 0;
     left: 0;
-    background: url("../img/fondoMobileIndex.jpeg"); /* Ajusta esto según tus necesidades */
+    background: url("../img/index/fondoMobileIndex.jpeg"); /* Ajusta esto según tus necesidades */
     filter: blur(3.4px); /* Ajusta el valor de blur según tu preferencia */
   }
 }
