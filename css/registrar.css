@@ -1,0 +1,27 @@
+form {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: solid red 1px;
+}
+form > h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 6%;
+}
+
+.contenedorInput{
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    border: solid green 1px;
+    margin-bottom: 3%;
+}
+
+#btnRegistrar{
+
+display: flex;
+align-self: center;
+margin: 0 auto;
+margin-top: 15%;
+}
