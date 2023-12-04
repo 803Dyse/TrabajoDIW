@@ -179,7 +179,7 @@ ______                                _                              _     _ _
                |_|                                                                  
 */
 /* Ejemplo de media query para dispositivos móviles */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 360px) {
   .container {
     position: relative;
     margin: 0;

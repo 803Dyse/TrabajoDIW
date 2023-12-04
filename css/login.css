@@ -1,27 +1,57 @@
 #titulo1 {
-    text-align: center;
-    font-size: 22px;
+  text-align: center;
+  font-size: 22px;
 }
 
 #contenedorLogin {
-    border: solid green 1px;
+  border: solid green 1px;
 }
 
-#contenedorLogin>form{
-    background-color: #161616;
+#contenedorLogin > form {
+  background-color: #161616;
 }
 
-.inputTxt{
-    border: solid #621e9a 1px;
+#contenedorLogin > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los elementos horizontalmente en el centro */
+}
+.inputTxt {
+  border: solid #621e9a 1px;
 }
 
-.img{
-    display: flex;
-    justify-content: center;
-    margin-right: 10%;
+.img {
+  display: flex;
+  justify-content: center;
+  margin-right: 8%;
+  margin-bottom: 10px;
 }
 
-form>h2 {
-    display: flex;
-    justify-content: center;
+form > h2 {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+#pContrasena {
+  display: flex;
+  font-size: 10px;
+  margin-left: 18%;
+  margin-top: -13px;
+}
+#btnFormulario {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+#pRegistrar {
+  display: flex;
+  font-size: 10px;
+  align-self: flex-start;
+}
+
+/*Por fin, damos un espaciado al footer*/
+#footer {
+  margin-top: 32%;
 }
