@@ -30,7 +30,6 @@
     </header>
     <main class="container">
 
-        <div id="contenedorInfoContacto">
             <h1>Lorem ipsum dolor sit amet consectetur</h1>
             <div class="contenedorRedesSociales">
                 <img src="img/contacto/icon_Instagram.svg" alt="" width="25px">
@@ -50,23 +49,26 @@
                     <legend>
                         Tienes algun problema o necesitas reportar algun error?
                     </legend>
-                    <label for="nombre">Nombre</label>
+                    <div class="contenedorInputs">
+                        <div class="inputFormContacto">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="Nombre" id="">
+                        </div>
+                        <div class="inputFormContacto">
+                            <label for="Apellido">Primer apellido</label>
+                            <input type="text" name="Apellido" id="">
+                        </div>
+                        <div class="inputFormContacto">
+                            <label for="Telefono">Teléfono de contacto</label>
+                            <input type="text" name="Telefono" id="">
+                        </div>
+                    </div>
+                    <label for="txtUsuario">Introduce el mensaje</label>
+                    <textarea name="txtUsuario" id="txtUsuario" cols="34%" rows="5"></textarea>
                     <br>
-                    <input type="text" name="Nombre" id="">
-                    <br><br>
-                    <label for="Apellido">Primer apellido</label>
-                    <br>
-                    <input type="text" name="Apellido" id="">
-                    <br><br>
-                    <label for="Telefono">Teléfono de contacto</label>
-                    <input type="text" name="Telefono" id="">
-                    <br><br>
-                    <textarea name="" id="" cols="30" rows="5"></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" id="btnEnviar">
                 </form>
             </div>
-        </div>
     </main>
     <footer id="footer">
         <p id="txtFooter1">Copyright © 2023 </p>

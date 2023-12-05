@@ -6,18 +6,11 @@
  \___\___/|_| |_|\__\___|_| |_|\___|\__,_|\___/|_|    |_|  \___|\__,_|\___||___/
                                                                        
 */
-
-#contenedorInfoContacto {
-  text-align: center;
-}
-#contenedorInfoContacto > h1 {
-  font-size: 20px;
-}
-
 .contenedorRedesSociales {
   display: flex;
  align-items: center;
  justify-content: center;
+ border: solid back 300px;
 }
 
 /*
@@ -29,3 +22,22 @@
                                                                      
 */
 
+.contenedorInputs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  grid-template-rows: 1fr;
+}
+
+.inputFormContacto>input:nth-child(-n+2){
+  width: 90%;
+}
+
+label{
+  font-size: 14px;
+}
+
+#btnEnviar{
+  width: 30%;
+margin-left: 35%;
+}
