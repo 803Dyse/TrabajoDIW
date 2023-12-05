@@ -13,26 +13,14 @@
 <body>
     <header id="header">
         <nav>
-            <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" width="70px" id="logoID"></a>
+            <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
             <img src="img/KitsuneHeader.svg" alt="" width="40px" id="KitsuneHeaderID">
-            <div id="menuHamburguer">
-                <label class="hamburger">
-                    <input type="checkbox" id="menuCheckbox">
-                    <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom"
-                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                        </path>
-                        <path class="line" d="M7 16 27 16"></path>
-                    </svg>
-                </label>
-                <ul id="menuList">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="registrar.html">Registrar</a></li>
-                    <li><a href="premium.html">Premium</a></li>
-                    <li><a href="explorar.html">Explorar</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
+            <div id="menuCheckbox">&#9776;</div>
+            <ul id="menuList">
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="premium.html">Quiero ser premium</a></li>
+               <li><a href="registrar.html">Eres nuevo? Registrate ya</a></li>
+            </ul>
         </nav>
     </header>
     <main class="container">
@@ -66,13 +54,14 @@
         // Obtén elementos del DOM
         const menuCheckbox = document.getElementById('menuCheckbox');
         const menuList = document.getElementById('menuList');
-    
+     
         // Agrega un evento de clic al checkbox del menú
         menuCheckbox.addEventListener('click', () => {
-            // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
-            menuList.style.display = menuCheckbox.checked ? 'block' : 'none';
+           // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
+           menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
         });
-    </script>
+     </script>
+     
 </body>
 
 </html>
