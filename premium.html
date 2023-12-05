@@ -36,30 +36,37 @@
         </nav>
     </header>
     <main class="container">
-<form action="">
-    <div id="formasDePago">
-        <button><img src="" alt=""></button>
-        <button><img src="" alt=""></button>
-        <button><img src="" alt=""></button>
-    </div>
-    <p>Lorem ipsum</p>
-    <div id="datosDelUsuario">
-        <img src="img/premium/icon_Cardholder.svg" alt="" width="25px">
-        <input type="text">
-        <br>
-        <img src="img/premium/icon_CardNumber.svg" alt="" width="25px">
-        <input type="text">
-        <br>
-        <img src="img/premium/icon_Calendar.svg" alt="" width="25px">
-        <input type="text">
-        <br>
-        <img src="img/login/icon_Password.svg" alt="" width="25px">
-        <input type="text">
-        <br>
-        <input type="submit" value="Enviar">
-    </div>
-</form>
-       
+        <form action="">
+            <div id="formasDePago">
+                <button><img src="img/premium/icon_Paypal.svg" alt="" width="66px"></button>
+                <button><img src="img/premium/icon_ApplePay.svg" alt="" width="40px"></button>
+                <button><img src="img/premium/icon_GooglePay.svg" alt="" width="40px"></button>
+            </div>
+
+            <div id="separador">
+                <div></div>
+                <p>Datos de la tarjeta</p>
+                <div></div>
+            </div>
+            <div id="datosDelUsuario">
+                <div class="inputPayment">
+                    <img src="img/premium/icon_Cardholder.svg" alt="" width="25px">
+                    <input type="text">
+                </div>
+                <div class="inputPayment">
+                    <img src="img/premium/icon_CardNumber.svg" alt="" width="25px">
+                    <input type="text">
+                </div>
+                <div class="inputPayment">
+                    <img src="img/premium/icon_Calendar.svg" alt="" width="25px">
+                    <input type="text">
+                    <img src="img/login/icon_Password.svg" alt="" width="25px">
+                    <input type="text">
+                </div>
+                <input type="submit" value="Enviar" id="enviarPago">
+            </div>
+        </form>
+
     </main>
     <footer id="footer">
         <p id="txtFooter1">Copyright © 2023 </p>
@@ -70,7 +77,7 @@
         // Obtén elementos del DOM
         const menuCheckbox = document.getElementById('menuCheckbox');
         const menuList = document.getElementById('menuList');
-    
+
         // Agrega un evento de clic al checkbox del menú
         menuCheckbox.addEventListener('click', () => {
             // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa

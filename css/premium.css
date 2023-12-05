@@ -1,0 +1,70 @@
+form {
+  margin-top: 30px;
+  border: solid red 1px;
+}
+
+#formasDePago {
+  display: flex;
+  justify-content: center;
+  border: solid green 1px;
+}
+#separador {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    position: relative; /* Agrega posición relativa al contenedor */
+  }
+  
+  #separador::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid white; 
+    margin-left: 65%;
+    margin-right: 10px;
+  }
+  #separador::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid white; 
+    margin-right: 65%;
+    margin-left: 10px;
+  }
+  
+  #separador > p {
+    font-size: 10px;
+  }
+  
+
+.inputPayment {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos al principio y al final del contenedor */
+  margin-right: 3%;
+  margin-bottom: 15px;
+}
+
+.inputPayment img {
+  width: 25px; /* Ajusta el tamaño de las imágenes */
+}
+
+.inputPayment input {
+  flex: 1; /* Hace que el input ocupe el espacio restante */
+}
+
+/* Aplica estilos específicos al segundo div con la clase "inputPayment" */
+.inputPayment:nth-child(3) > input {
+  width: 25%;
+  /* Estilos adicionales si es necesario */
+}
+
+#enviarPago {
+  width: 25%;
+  height: 30px;
+  margin-left: 37%;
+  margin-bottom: 5%;
+}
