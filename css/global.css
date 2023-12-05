@@ -67,6 +67,7 @@
   list-style-type: none;
   padding: 3px;
   border-radius: 8px;
+  z-index: 1;
 }
 
 #menuList a {

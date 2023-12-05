@@ -13,9 +13,17 @@
 <body>
     <header id="header">
         <nav>
-            <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" width="70px" id="logoID"></a>
+            <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
             <img src="img/KitsuneHeader.svg" alt="" width="40px" id="KitsuneHeaderID">
-           
+            <div id="menuCheckbox">&#9776;</div>
+            <ul id="menuList">
+               <li><a href="index.html">Inicio</a></li>
+               <li><a href="premium.html">Quiero ser premium</a></li>
+               <li><a href="registrar.html">Eres nuevo? Registrate ya</a></li>
+               <li><a href="explorar.html">Explorar Portafolios</a></li>
+               <li><a href="contacto.html">Habla con nosotros</a></li>
+               <li><a href="login.html">Ya eres miembro? Conectate</a></li>
+            </ul>
         </nav>
     </header>
     <main class="container">
@@ -44,6 +52,17 @@
         <p id="txtFooter2">Bilo Alejandro Martins Gonzalez</p>
         <p id="txtFooter3">@alexdyse</p>
     </footer>
+    <script>
+        // Obtén elementos del DOM
+        const menuCheckbox = document.getElementById('menuCheckbox');
+        const menuList = document.getElementById('menuList');
+     
+        // Agrega un evento de clic al checkbox del menú
+        menuCheckbox.addEventListener('click', () => {
+           // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
+           menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
+        });
+     </script>
 </body>
 
 </html>
