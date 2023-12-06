@@ -101,6 +101,61 @@
   --rotate-bar-three: -45deg;
 }
 
+.enlaces-menu {
+  display: none;
+  position: absolute;
+  top: 60px; /* Ajusta la posición según tus necesidades */
+  right: 20px;
+  background-color: #ffffff; /* Ajusta el color de fondo según tus necesidades */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.enlaces-menu > a {
+  color: inherit; /*Quitamos el estilo feo que tenemos despues de clickar en anclados. Si, son feos y tu lo sabes.*/
+  text-decoration: none; /*Quitamos tambien la linea que se genera despues de clickar*/
+}
+
+/* Animación para abrir el menú deslizando hacia abajo */
+/* Animación para abrir el menú deslizando hacia abajo y apareciendo */
+.check-icon:checked + .menuHamburguesa + .enlaces-menu {
+  display: flex;
+  flex-direction: column;
+  animation: slide-fade-in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  pointer-events: auto; /* Hacer la zona clickable cuando el menú está abierto */
+}
+
+@keyframes slide-fade-in {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animación para cerrar el menú deslizando hacia arriba y desapareciendo */
+.check-icon:not(:checked) + .menuHamburguesa + .enlaces-menu {
+  display: flex;
+  flex-direction: column;
+  animation: slide-fade-out 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  pointer-events: none; /* Hacer la zona no clickable cuando el menú está cerrado */
+}
+
+@keyframes slide-fade-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+}
+
 /*
  _               _       
 | |             | |      
