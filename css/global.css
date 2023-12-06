@@ -16,17 +16,15 @@
 | | | |  __/ (_| | (_| |  __/ |   
 |_| |_|\___|\__,_|\__,_|\___|_|   
 */
-/* Define header style */
 #header {
-  background-color: #5c62b0; /* Set header background color */
+  background-color: #ffffff;
   grid-row-start: 1;
-  grid-column-start: 1; /* Position header in the grid */
+  grid-column-start: 1;
   grid-row-end: 2;
-  grid-column-end: 2; /* Size header in the grid */
-  border-style: solid; /* Set header border style */
+  grid-column-end: 2;
 }
 
-#logoID{
+#logoID {
   width: 70px;
 }
 
@@ -37,44 +35,71 @@
   left: calc(50% - 20px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#menuCheckbox {
-  font-size: 30px;
+/*
+                                      _                    _           
+ _ __ ___   ___ _ __  _   _          | |__   ___  __ _  __| | ___ _ __ 
+| '_ ` _ \ / _ \ '_ \| | | |         | '_ \ / _ \/ _` |/ _` |/ _ \ '__|
+| | | | | |  __/ | | | |_| |         | | | |  __/ (_| | (_| |  __/ |   
+|_| |_| |_|\___|_| |_|\__,_|         |_| |_|\___|\__,_|\__,_|\___|_|   
+*/
+.menuHamburguesa {
+  --gap: 5px;
+  --height-bar: 2.5px;
+  --pos-y-bar-one: 0;
+  --pos-y-bar-three: 0;
+  --scale-bar: 1;
+  --rotate-bar-one: 0;
+  --rotate-bar-three: 0;
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
   cursor: pointer;
   position: absolute;
   top: 30px;
   right: 20px;
 }
 
-#menuList {
-  display: none;
-  position: absolute;
-  top: 63px;
-  right: 22px;
-  background-color: #898a9e;
-  list-style-type: none;
-  padding: 3px;
-  border-radius: 8px;
-  z-index: 1;
+.bar {
+  position: relative;
+  height: var(--height-bar);
+  width: 110%;
+  border-radius: 0.5rem;
+  background-color: #000000;
 }
 
-#menuList a {
-  color: #fff;
-  text-decoration: none;
+.bar--1 {
+  top: var(--pos-y-bar-one);
+  transform: rotate(var(--rotate-bar-one));
+  transition: top 200ms 100ms, transform 100ms;
 }
 
+.bar--2 {
+  transform: scaleX(var(--scale-bar));
+  transition: transform 150ms 100ms;
+}
+
+.bar--3 {
+  bottom: var(--pos-y-bar-three);
+  transform: rotate(var(--rotate-bar-three));
+  transition: bottom 200ms 100ms, transform 100ms;
+}
+
+.check-icon:checked + .menuHamburguesa > .bar--1 {
+  transition: top 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked + .menuHamburguesa > .bar--3 {
+  transition: bottom 200ms, transform 200ms 100ms;
+}
+
+.check-icon:checked + .menuHamburguesa {
+  --pos-y-bar-one: calc(var(--gap) + var(--height-bar) * 2 + 1px);
+  --pos-y-bar-three: calc(var(--gap) + var(--height-bar) * 2 + 1px);
+  --scale-bar: 0;
+  --rotate-bar-one: 45deg;
+  --rotate-bar-three: -45deg;
+}
 
 /*
  _               _       
@@ -88,14 +113,16 @@
 */
 /* Selector del body, de momento solo utilizamos para definir un color de fondo. */
 body {
-  background-color: #333333;
+  background-color: #f7f7f8;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /*Para poder mantener el footer anclado al final del todo.*/
 }
 
+/*Aqui definimos flex:1 porque en footer y en body estamos asignando el espacio 
+ocupado de la pagina para conseguir tener el footer pegado al final absoluto.*/
 main {
-  flex: 1; 
+  flex: 1;
 }
 
 /*
@@ -108,23 +135,19 @@ main {
 */
 /*FOOTER*/
 #footer {
+  border-top: 1px solid #000000;
+  background-color: #ffffff;
   grid-row-start: 6;
   grid-column-start: 1;
   grid-row-end: 7;
   grid-column-end: 2;
   text-align: center;
   position: relative;
-  color: #ffa0ff;
   font-size: 12px;
-  background: url("../img/fondoFooter.png");
   margin-top: 3px;
   flex-shrink: 0;
 }
 
-/*Aqui juntamos un poquito los parrafos del footer para que sea algo mas discreto.*/
-#txtFooter1,
-#txtFooter2,
-#txtFooter3 {
-  /*margin: -3px;
-  Esta propriedad esta mal, hace lo que quiero, que es juntar los 3 p que tengo en footer pero, me come un poco del contenedor de arriba, por lo cual no la borro pero queda avisado para buscar una solucion y alternativa a esto.*/
+#footer > p:nth-child(-n + 2) {
+  margin-bottom: -5px;
 }
