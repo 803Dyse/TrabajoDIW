@@ -66,19 +66,17 @@ ______                                _                              _     _ _
 */
 
   #tituloIndex {
-    -webkit-text-stroke: 0.5px #161616;
-
     margin-top: 28px;
     font-size: 25px;
-    color: #f9aef9;
     margin-left: 40%;
+    color: #003554;
   }
 
   #tituloIndexDos {
     font-size: 25px;
-    color: #2c84fa;
     margin-left: 20%;
     margin-bottom: 28;
+    color: #003554;
   }
 
   /*Este codigo es animacion de slide hacia la izquierda, para el primer texto del indice*/
@@ -125,24 +123,23 @@ ______                                _                              _     _ _
     text-transform: uppercase;
     font-size: 15px;
     transition: all 0.5s ease;
-    background-color: #161616;
-    border: solid 0.5px #f9aef9;
-    color: #ffa0ff;
+    background-color: #051923;
+    color: #00a6fb;
     width: 170px;
   }
   #suscribirse:hover,
   #registrarse:hover {
-    background-color: #6c0474;
+    background-color: #003554;
 
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+    box-shadow: #003554 0px 7px 29px 0px;
   }
 
   #suscribirse:active,
   #registrarse:active {
-    background-color: #9b3fa1;
+    background-color: #00a6fb;
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    box-shadow: #00a6fb 0px 0px 0px 0px;
     transform: translateX(5px);
     transition: 100ms;
   }
@@ -175,44 +172,48 @@ ______                                _                              _     _ _
     height: auto;
   }
 
-  #flechaAbajo svg {
-    transition: transform 0.6s;
-  }
-  #flechaAbajo svg:hover {
-    transform: rotateY(180deg);
-  }
-
-  #flechaAbajo {
-    width: 100%;
-    text-align: center;
-  }
-
-/*
+  /*
    ___           _         _        __           _            
   / _ \__ _ _ __| |_ ___  (_)_ __  / _| ___ _ __(_) ___  _ __ 
  / /_)/ _` | '__| __/ _ \ | | '_ \| |_ / _ \ '__| |/ _ \| '__|
 / ___/ (_| | |  | ||  __/ | | | | |  _|  __/ |  | | (_) | |   
 \/    \__,_|_|   \__\___| |_|_| |_|_|  \___|_|  |_|\___/|_|   
 */
+  #tituloParte2Index {
+    margin-top: 5%;
+    font-size: 20px;
+    line-height: 0.9;
+    color: #003554;
+  }
+
   #contenedor2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
   #contenedor2p1 {
-    border: solid red 1px;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
+
+  #contenedor2p1,
   #contenedor2p2 {
-    border: solid red 1px;
+    font-size: 16px;
+    line-height: 1;
   }
 
   #imgContenedor2 {
     grid-row: span 2;
-    border: 1px solid yellow;
     align-self: center;
+    border-radius: 10px;
+    border: solid #006494 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  #tituloParte2Index {
-    font-size: 22px;
+  #enlaceContacto,
+  #enlaceExplorar {
+    color: #003554;
+    text-decoration: none;
   }
 }

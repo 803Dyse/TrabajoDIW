@@ -15,15 +15,19 @@
         <nav>
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
             <img src="img/KitsuneHeader.svg" alt="" width="40px" id="KitsuneHeaderID">
-            <div id="menuCheckbox">&#9776;</div>
-            <ul id="menuList">
-               <li><a href="index.html">Inicio</a></li>
-               <li><a href="premium.html">Quiero ser premium</a></li>
-               <li><a href="registrar.html">Eres nuevo? Registrate ya</a></li>
-               <li><a href="explorar.html">Explorar Portafolios</a></li>
-               <li><a href="contacto.html">Habla con nosotros</a></li>
-               <li><a href="login.html">Ya eres miembro? Conectate</a></li>
-            </ul>
+            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
+            <label class="menuHamburguesa" for="check-icon">
+                <div class="bar bar--1"></div>
+                <div class="bar bar--2"></div>
+                <div class="bar bar--3"></div>
+            </label>
+            <div class="enlaces-menu">
+                <a href="explorar.html">Explorar</a>
+                <a href="premium.html">Premium</a>
+                <a href="login.html">Login</a>
+                <a href="registrar.html">Registrar</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
         </nav>
     </header>
     <main class="container">

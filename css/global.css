@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-/* Apply 2px margin and no border to all elements */
 * {
   font-family: "Open Sans", sans-serif;
   margin: 2px;
@@ -32,6 +31,7 @@
 #KitsuneHeaderID {
   position: absolute;
   top: 30px;
+  width: 40px;
   left: calc(50% - 20px);
 }
 
@@ -104,12 +104,14 @@
 .enlaces-menu {
   display: none;
   position: absolute;
-  top: 60px; /* Ajusta la posición según tus necesidades */
+  top: 60px;
   right: 20px;
-  background-color: #ffffff; /* Ajusta el color de fondo según tus necesidades */
+  background-color: #ffffff;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px black;
+  z-index: 1; 
+  /*en index.html sobrepone el contenedor de abajo, de los botones premium y registrar, por esta razon me veo obligado a poner zindex y como se aplica a lo global, tambien cambiara en las demas paginas, aun que considero correcto su aplicacion ya que nos interesa que tenga maxima prioridad sobre los otros contenedores.*/
 }
 
 .enlaces-menu > a {
@@ -117,7 +119,6 @@
   text-decoration: none; /*Quitamos tambien la linea que se genera despues de clickar*/
 }
 
-/* Animación para abrir el menú deslizando hacia abajo */
 /* Animación para abrir el menú deslizando hacia abajo y apareciendo */
 .check-icon:checked + .menuHamburguesa + .enlaces-menu {
   display: flex;
@@ -180,6 +181,7 @@ main {
   flex: 1;
 }
 
+
 /*
   __            _            
  / _|          | |           
@@ -190,7 +192,7 @@ main {
 */
 /*FOOTER*/
 #footer {
-  border-top: 1px solid #000000;
+  border-top: 1px solid #051923;
   background-color: #ffffff;
   grid-row-start: 6;
   grid-column-start: 1;
@@ -201,6 +203,7 @@ main {
   font-size: 12px;
   margin-top: 3px;
   flex-shrink: 0;
+  color: #051923;
 }
 
 #footer > p:nth-child(-n + 2) {
