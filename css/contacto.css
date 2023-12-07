@@ -35,7 +35,27 @@ td > p {
 |_|  \___/|_|  |_| |_| |_|\__,_|_|\__,_|_|  |_|\___/   \___\___/|_| |_|\__\__,_|\___|\__\___/ 
                                                                      
 */
+form {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
 
+
+legend{
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: center;
+  color: #051923;
+  margin-bottom: 20px;
+}
+
+div>label{
+  color:#051923;
+}
+
+div > input {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .contenedorInputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -51,7 +71,20 @@ label {
   font-size: 14px;
 }
 
+#txtUsuario{
+ 
+  width: 290px;
+  height: 80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 #btnEnviar {
-  width: 30%;
-  margin-left: 35%;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  padding: 10px;
+}
+
+#btnEnviar:hover{
+  color: #ffffff;
 }

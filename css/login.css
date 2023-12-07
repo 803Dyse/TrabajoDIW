@@ -4,7 +4,6 @@
   color: #003554;
 }
 
-
 #contenedorLogin {
   margin-top: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -49,7 +48,9 @@ form > h2 {
   margin-top: 15%;
   margin-bottom: 15%;
 }
-
+#btnFormulario:hover{
+  color: #ffffff;
+}
 div > img {
   width: 25px;
 }
@@ -70,6 +71,5 @@ div > img {
 .anchorBacano:visited {
   text-decoration: none;
   color: inherit;
-    color: #003554;
-
+  color: #003554;
 }

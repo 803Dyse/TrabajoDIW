@@ -35,13 +35,15 @@
         <h1 id="hablaConNosotros">Habla con nosotros.</h1>
         <table class="contenedorRedesSociales">
             <tr>
-                <td><a href=""><img src="img/contacto/icon_Instagram.svg" alt="logo de instagram" class="iconRedeSocial"></a></td>
+                <td><a href=""><img src="img/contacto/icon_Instagram.svg" alt="logo de instagram"
+                            class="iconRedeSocial"></a></td>
                 <td>
                     <p>Instagram</p>
                 </td>
             </tr>
             <tr>
-                <td><a href=""><img src="img/contacto/icon_X.svg" alt="logo de x (twitter)" class="iconRedeSocial"></a></td>
+                <td><a href=""><img src="img/contacto/icon_X.svg" alt="logo de x (twitter)" class="iconRedeSocial"></a>
+                </td>
                 <td>
                     <p>Twitter</p>
                 </td>
@@ -62,21 +64,21 @@
                 <div class="contenedorInputs">
                     <div class="inputFormContacto">
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="Nombre" id="">
+                        <input type="text" name="Nombre" id="" required placeholder="Nombre">
                     </div>
                     <div class="inputFormContacto">
                         <label for="Apellido">Primer apellido</label>
-                        <input type="text" name="Apellido" id="">
+                        <input type="text" name="Apellido" id="" required placeholder="Primer apellido">
                     </div>
                     <div class="inputFormContacto">
                         <label for="Telefono">Teléfono de contacto</label>
-                        <input type="text" name="Telefono" id="">
+                        <input type="text" name="Telefono" id="" required placeholder="Numero de telefono">
                     </div>
                 </div>
                 <label for="txtUsuario">Introduce el mensaje</label>
-                <textarea name="txtUsuario" id="txtUsuario" cols="34%" rows="5"></textarea>
+                <textarea name="txtUsuario" id="txtUsuario" required placeholder="Escribe aqui"></textarea>
                 <br>
-                <input type="submit" value="Enviar" id="btnEnviar">
+                <button type="submit" required value="Enviar" id="btnEnviar" class="botonBacano">Enviar</button>
             </form>
         </div>
     </main>
