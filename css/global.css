@@ -23,7 +23,6 @@
   grid-column-end: 2;
   border-radius: 3px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 #logoID {
@@ -214,9 +213,6 @@ main {
   line-height: 0.9;
 }
 
-
-
-
 /*Esto que ves abajo es el boton animado que utilizaré repetidas veces, por esta razón lo voy a vincular a global, para no repetir codigo.*/
 
 .botonBacano {
@@ -226,7 +222,7 @@ main {
   border-radius: 3px;
 }
 
-#cvv{
+#cvv {
   -moz-appearance: textfield;
 }
 .inputDeTarjeta {
@@ -247,7 +243,7 @@ main {
 }
 .botonBacano::before,
 .botonBacano::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: 0;
@@ -280,4 +276,128 @@ main {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*Responsive Desktop (1920x1080)*/
+@media screen and (min-width: 361px) {
+  header,
+  main,
+  footer {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .menuHamburguesa {
+    --gap: 5px;
+    --height-bar: 2.5px;
+    --pos-y-bar-one: 0;
+    --pos-y-bar-three: 0;
+    --scale-bar: 1;
+    --rotate-bar-one: 0;
+    --rotate-bar-three: 0;
+    width: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 22%;
+  }
+
+  .bar {
+    position: relative;
+    height: var(--height-bar);
+    width: 110%;
+    border-radius: 0.5rem;
+    background-color: #000000;
+  }
+
+  .bar--1 {
+    top: var(--pos-y-bar-one);
+    transform: rotate(var(--rotate-bar-one));
+    transition: top 200ms 100ms, transform 100ms;
+  }
+
+  .bar--2 {
+    transform: scaleX(var(--scale-bar));
+    transition: transform 150ms 100ms;
+  }
+
+  .bar--3 {
+    bottom: var(--pos-y-bar-three);
+    transform: rotate(var(--rotate-bar-three));
+    transition: bottom 200ms 100ms, transform 100ms;
+  }
+
+  .check-icon:checked + .menuHamburguesa > .bar--1 {
+    transition: top 200ms, transform 200ms 100ms;
+  }
+
+  .check-icon:checked + .menuHamburguesa > .bar--3 {
+    transition: bottom 200ms, transform 200ms 100ms;
+  }
+
+  .check-icon:checked + .menuHamburguesa {
+    --pos-y-bar-one: calc(var(--gap) + var(--height-bar) * 2 + 1px);
+    --pos-y-bar-three: calc(var(--gap) + var(--height-bar) * 2 + 1px);
+    --scale-bar: 0;
+    --rotate-bar-one: 45deg;
+    --rotate-bar-three: -45deg;
+  }
+
+  .enlaces-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    z-index: 1;
+
+    .enlaces-menu > a {
+      color: inherit; /*Quitamos el estilo feo que tenemos despues de clickar en anclados. Si, son feos y tu lo sabes.*/
+      text-decoration: none; /*Quitamos tambien la linea que se genera despues de clickar*/
+    }
+
+    .check-icon:checked + .menuHamburguesa + .enlaces-menu {
+      display: flex;
+      flex-direction: column;
+      animation: slide-fade-in 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      pointer-events: auto; /* Hacer la zona clickable cuando el menú está abierto */
+    }
+
+    @keyframes slide-fade-in {
+      0% {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .check-icon:not(:checked) + .menuHamburguesa + .enlaces-menu {
+      display: flex;
+      flex-direction: column;
+      animation: slide-fade-out 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      pointer-events: none; /* Hacer la zona no clickable cuando el menú está cerrado */
+    }
+
+    @keyframes slide-fade-out {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+    }
+  }
 }
