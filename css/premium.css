@@ -23,15 +23,11 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
 caption {
   font-variant: small-caps;
   text-shadow: #051923;
   text-decoration: underline;
 }
-
-
 
 /*
   __                            _            _                                    _                 
@@ -57,6 +53,20 @@ form {
 #imgApplePay,
 #imgGooglePay {
   width: 40px;
+}
+
+/*selector para arredondear un poquito las imagenes de logo*/
+#formasDePago > button {
+  border-radius: 5px;
+}
+
+/*Un poquito de margin para que no esten tan pegados hacia arriba..*/
+#formasDePago > button > img {
+  margin-top: 4px;
+}
+
+#formasDePago > button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .logoPayments {
@@ -95,7 +105,6 @@ form {
   font-size: 10px;
 }
 
-
 /*
  _                   _       
 (_)_ __  _ __  _   _| |_ ___ 
@@ -123,11 +132,4 @@ form {
 .inputPayment:nth-child(3) > input {
   width: 25%;
   /* Estilos adicionales si es necesario */
-}
-
-#enviarPago {
-  width: 25%;
-  height: 30px;
-  margin-left: 37%;
-  margin-bottom: 5%;
 }

@@ -1,14 +1,18 @@
 #titulo1 {
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
+  color: #003554;
 }
 
+
 #contenedorLogin {
-  border: solid green 1px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
 }
 
 #contenedorLogin > form {
-  background-color: #161616;
+  background-color: #ffffff;
 }
 
 #contenedorLogin > form {
@@ -17,7 +21,7 @@
   align-items: center; /* Alinea los elementos horizontalmente en el centro */
 }
 .inputTxt {
-  border: solid #621e9a 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .img {
@@ -26,12 +30,12 @@
   margin-right: 8%;
   margin-bottom: 10px;
 }
-
 form > h2 {
   display: flex;
   margin-bottom: 30px;
   margin-top: 10px;
   justify-content: center;
+  color: #003554;
 }
 
 #pContrasena {
@@ -41,8 +45,13 @@ form > h2 {
   margin-top: -13px;
 }
 #btnFormulario {
+  margin-left: 0px;
   margin-top: 15%;
   margin-bottom: 15%;
+}
+
+div > img {
+  width: 25px;
 }
 
 #pRegistrar {
@@ -54,4 +63,11 @@ form > h2 {
 /*Por fin, damos un espaciado al footer*/
 #footer {
   margin-top: 30%;
+}
+
+/*Vamos a quitar el estilo horrible de los anchor <a>*/
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
 }

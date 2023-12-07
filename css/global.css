@@ -206,5 +206,73 @@ main {
 }
 
 #footer > p {
-  line-height: 0.8º;
+  line-height: 0.9;
+}
+
+
+
+
+/*Esto que ves abajo es el boton animado que utilizaré repetidas veces, por esta razón lo voy a vincular a global, para no repetir codigo.*/
+
+.botonBacano {
+  width: 25%;
+  margin-left: 28%;
+  height: 30px;
+  border-radius: 3px;
+}
+
+#cvv{
+  -moz-appearance: textfield;
+}
+.inputDeTarjeta {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
+}
+
+.botonBacano {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+.botonBacano::before,
+.botonBacano::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  -webkit-transform: skew(15deg);
+  -ms-transform: skew(15deg);
+  transform: skew(15deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.botonBacano::before {
+  left: -10px;
+  background: #051923;
+}
+
+.botonBacano::after {
+  right: -10px;
+  background: #051923;
+}
+.botonBacano:hover::before,
+.botonBacano:hover::after {
+  width: 58%;
+}
+
+.botonBacano:hover span {
+  color: #ffffff;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
