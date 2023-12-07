@@ -1,8 +1,9 @@
 form {
-  background-color: #161616;
+  background-color: #ffffff;
   margin-top: 15%;
   margin-bottom: 10%;
-  border: solid red 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 3px;
 }
 form > h2 {
   display: flex;
@@ -15,23 +16,38 @@ form > h2 {
   display: flex;
   justify-content: center;
   margin-right: 10%;
-  border: solid green 1px;
   margin-bottom: 3%;
 }
 
-#msjEresMiembro{
+.contenedorInput > input {
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#msjEresMiembro {
   display: flex;
   font-size: 10px;
   margin-top: 10%;
-  border: solid red 1px;
 }
+
+#msjEresMiembro > a,#msjEresMiembro > a:visited {
+  text-decoration: none;
+  color: inherit;
+
+}
+
 #btnRegistrar {
-  display: flex;
   align-self: center;
-  margin: 0 auto;
   margin-top: 15%;
 }
 
+#btnRegistrar:hover {
+  color: #ffffff;
+}
 #footer {
   margin-top: 25%;
+}
+
+div > img {
+  width: 25px;
 }
