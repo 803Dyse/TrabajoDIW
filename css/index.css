@@ -189,7 +189,7 @@ ______                                _                              _     _ _
   #contenedor2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: auto auto;
     color: #051923;
   }
 
@@ -201,7 +201,8 @@ ______                                _                              _     _ _
   #contenedor2p1,
   #contenedor2p2 {
     font-size: 16px;
-    line-height: 1;
+    /* line-height: 1; */
+    text-align: left;
   }
 
   #imgContenedor2 {
@@ -209,7 +210,6 @@ ______                                _                              _     _ _
     grid-row: span 2;
     align-self: center;
     border-radius: 10px;
-    border: solid #006494 1px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 

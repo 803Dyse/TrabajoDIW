@@ -1,45 +1,78 @@
+#tablaPrecios {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#tablaPrecios td,
+#tablaPrecios th {
+  width: 80px;
+}
+#tablaPrecios table {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+caption {
+  font-variant: small-caps;
+  text-shadow: #051923;
+  text-decoration: underline;
+}
+
 form {
-  margin-top: 30px;
-  border: solid red 1px;
+  margin-top: 20px;
 }
 
 #formasDePago {
   display: flex;
   justify-content: center;
-  border: solid green 1px;
 }
+
+#imgPaypal {
+  width: 66px;
+}
+
+#imgApplePay,
+#imgGooglePay {
+  width: 40px;
+}
+
+.logoPayments {
+  width: 25px;
+}
+
 #separador {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    position: relative; /* Agrega posición relativa al contenedor */
-  }
-  
-  #separador::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    border-top: 1px solid white; 
-    margin-left: 65%;
-    margin-right: 10px;
-  }
-  #separador::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    border-top: 1px solid white; 
-    margin-right: 65%;
-    margin-left: 10px;
-  }
-  
-  #separador > p {
-    font-size: 10px;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  position: relative; /* Agrega posición relativa al contenedor */
+}
+
+#separador::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #051923;
+  margin-left: 65%;
+  margin-right: 10px;
+}
+#separador::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #051923;
+  margin-right: 65%;
+  margin-left: 10px;
+}
+
+#separador > p {
+  font-size: 10px;
+}
 
 .inputPayment {
   display: flex;

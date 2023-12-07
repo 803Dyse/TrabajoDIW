@@ -15,7 +15,7 @@
         <nav>
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
             <img src="img/KitsuneHeader.svg" alt="imagen de kanji" id="KitsuneHeaderID">
-            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox" >
+            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
             <label class="menuHamburguesa" for="check-icon">
                 <div class="bar bar--1"></div>
                 <div class="bar bar--2"></div>
@@ -31,13 +31,34 @@
         </nav>
     </header>
     <main class="container">
+        <div id="tablaPrecios">
+            <table>
+                <caption>precios</caption>
+                <tr>
+                    <th>1 día</th>
+                    <td>$5</td>
+                </tr>
+                <tr>
+                    <th>1 semana</th>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <th>3 meses</th>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <th>1 año</th>
+                    <td>$50</td>
+                </tr>
+            </table>
+        </div>
         <form action="">
             <div id="formasDePago">
-                <button><img src="img/premium/icon_Paypal.svg" alt="" width="66px"></button>
-                <button><img src="img/premium/icon_ApplePay.svg" alt="" width="40px"></button>
-                <button><img src="img/premium/icon_GooglePay.svg" alt="" width="40px"></button>
+                <button><img src="img/premium/icon_Paypal.svg" alt="logo de Paypal" id="imgPaypal"></button>
+                <button><img src="img/premium/icon_ApplePay.svg" alt="logo de Apple Pay" id="imgApplePay"></button>
+                <button><img src="img/premium/icon_GooglePay.svg" alt="logo de Google Pay" width="40px"
+                        id="imgGooglePay"></button>
             </div>
-
             <div id="separador">
                 <div></div>
                 <p>Datos de la tarjeta</p>
@@ -45,20 +66,21 @@
             </div>
             <div id="datosDelUsuario">
                 <div class="inputPayment">
-                    <img src="img/premium/icon_Cardholder.svg" alt="" width="25px">
-                    <input type="text">
+                    <img src="img/premium/icon_Cardholder.svg" alt="logo de un muñeco" class="logoPayments">
+                    <input type="text" required>
                 </div>
                 <div class="inputPayment">
-                    <img src="img/premium/icon_CardNumber.svg" alt="" width="25px">
-                    <input type="text">
+                    <img src="img/premium/icon_CardNumber.svg" alt="logo de una tarjeta de credito"
+                        class="logoPayments">
+                    <input type="text" required>
                 </div>
                 <div class="inputPayment">
-                    <img src="img/premium/icon_Calendar.svg" alt="" width="25px">
-                    <input type="text">
-                    <img src="img/login/icon_Password.svg" alt="" width="25px">
-                    <input type="text">
+                    <img src="img/premium/icon_Calendar.svg" alt="logo de un calendario" class="logoPayments">
+                    <input type="text" required>
+                    <img src="img/login/icon_Password.svg" alt="logo de un candado" class="logoPayments">
+                    <input type="text" required>
                 </div>
-                <input type="submit" value="Enviar" id="enviarPago">
+                <input type="submit" value="Enviar" id="enviarPago" required>
             </div>
         </form>
 
@@ -72,13 +94,13 @@
         // Obtén elementos del DOM
         const menuCheckbox = document.getElementById('menuCheckbox');
         const menuList = document.getElementById('menuList');
-     
+
         // Agrega un evento de clic al checkbox del menú
         menuCheckbox.addEventListener('click', () => {
-           // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
-           menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
+            // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
+            menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
         });
-     </script>
+    </script>
 </body>
 
 </html>
