@@ -110,7 +110,7 @@
   padding: 10px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px black;
-  z-index: 1; 
+  z-index: 1;
   /*en index.html sobrepone el contenedor de abajo, de los botones premium y registrar, por esta razon me veo obligado a poner zindex y como se aplica a lo global, tambien cambiara en las demas paginas, aun que considero correcto su aplicacion ya que nos interesa que tenga maxima prioridad sobre los otros contenedores.*/
 }
 
@@ -181,7 +181,6 @@ main {
   flex: 1;
 }
 
-
 /*
   __            _            
  / _|          | |           
@@ -207,5 +206,5 @@ main {
 }
 
 #footer > p {
-line-height: 0.8;
+  line-height: 0.8º;
 }
