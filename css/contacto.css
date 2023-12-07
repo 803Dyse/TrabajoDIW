@@ -1,3 +1,9 @@
+#hablaConNosotros {
+  font-size: 22px;
+  color: #003554;
+  text-align: center;
+}
+
 /*
                  _                      _                           _           
   ___ ___  _ __ | |_ ___ _ __   ___  __| | ___  _ __   _ __ ___  __| | ___  ___ 
@@ -17,7 +23,7 @@
   width: 25px;
 }
 
-td>p{
+td > p {
   font-size: 14px;
 }
 

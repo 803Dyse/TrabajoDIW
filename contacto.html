@@ -15,7 +15,7 @@
         <nav>
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
             <img src="img/KitsuneHeader.svg" alt="imagen de kanji" id="KitsuneHeaderID">
-            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox" >
+            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
             <label class="menuHamburguesa" for="check-icon">
                 <div class="bar bar--1"></div>
                 <div class="bar bar--2"></div>
@@ -32,47 +32,53 @@
     </header>
     <main class="container">
 
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <table class="contenedorRedesSociales">
-                <tr>
-                    <td><img src="img/contacto/icon_Instagram.svg" alt="logo de instagram" class="iconRedeSocial"></td>
-                    <td><p>Instagram</p></td>
-                </tr>
-                <tr>
-                    <td><img src="img/contacto/icon_X.svg" alt="logo de x (twitter)" class="iconRedeSocial"></td>
-                    <td><p>Nuestro twitter</p></td>
-                </tr>
-                <tr>
-                    <td><img src="img/contacto/icon_Correo.svg" class="iconRedeSocial"></td>
-                    <td><p>Nuestro correo electrónico</p></td>
-                </tr>
-            </table>
+        <h1 id="hablaConNosotros">Habla con nosotros.</h1>
+        <table class="contenedorRedesSociales">
+            <tr>
+                <td><a href=""><img src="img/contacto/icon_Instagram.svg" alt="logo de instagram" class="iconRedeSocial"></a></td>
+                <td>
+                    <p>Instagram</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href=""><img src="img/contacto/icon_X.svg" alt="logo de x (twitter)" class="iconRedeSocial"></a></td>
+                <td>
+                    <p>Twitter</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a href=""><img src="img/contacto/icon_Correo.svg" class="iconRedeSocial"></a></td>
+                <td>
+                    <p>Correo electrónico</p>
+                </td>
+            </tr>
+        </table>
 
-            <div id="formularioContacto">
-                <form action="">
-                    <legend>
-                        Tienes algun problema o necesitas reportar algun error?
-                    </legend>
-                    <div class="contenedorInputs">
-                        <div class="inputFormContacto">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="Nombre" id="">
-                        </div>
-                        <div class="inputFormContacto">
-                            <label for="Apellido">Primer apellido</label>
-                            <input type="text" name="Apellido" id="">
-                        </div>
-                        <div class="inputFormContacto">
-                            <label for="Telefono">Teléfono de contacto</label>
-                            <input type="text" name="Telefono" id="">
-                        </div>
+        <div id="formularioContacto">
+            <form action="">
+                <legend>
+                    Tienes algun problema o necesitas reportar algun error?
+                </legend>
+                <div class="contenedorInputs">
+                    <div class="inputFormContacto">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="Nombre" id="">
                     </div>
-                    <label for="txtUsuario">Introduce el mensaje</label>
-                    <textarea name="txtUsuario" id="txtUsuario" cols="34%" rows="5"></textarea>
-                    <br>
-                    <input type="submit" value="Enviar" id="btnEnviar">
-                </form>
-            </div>
+                    <div class="inputFormContacto">
+                        <label for="Apellido">Primer apellido</label>
+                        <input type="text" name="Apellido" id="">
+                    </div>
+                    <div class="inputFormContacto">
+                        <label for="Telefono">Teléfono de contacto</label>
+                        <input type="text" name="Telefono" id="">
+                    </div>
+                </div>
+                <label for="txtUsuario">Introduce el mensaje</label>
+                <textarea name="txtUsuario" id="txtUsuario" cols="34%" rows="5"></textarea>
+                <br>
+                <input type="submit" value="Enviar" id="btnEnviar">
+            </form>
+        </div>
     </main>
     <footer id="footer">
         <p id="txtFooter1">Copyright © 2023 </p>
@@ -83,13 +89,13 @@
         // Obtén elementos del DOM
         const menuCheckbox = document.getElementById('menuCheckbox');
         const menuList = document.getElementById('menuList');
-     
+
         // Agrega un evento de clic al checkbox del menú
         menuCheckbox.addEventListener('click', () => {
-           // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
-           menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
+            // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
+            menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
         });
-     </script>
+    </script>
 </body>
 
 </html>

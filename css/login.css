@@ -66,8 +66,10 @@ div > img {
 }
 
 /*Vamos a quitar el estilo horrible de los anchor <a>*/
-a,
-a:visited {
+.anchorBacano,
+.anchorBacano:visited {
   text-decoration: none;
   color: inherit;
+    color: #003554;
+
 }
