@@ -14,8 +14,8 @@
     <header id="header">
         <nav>
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
-            <img src="img/KitsuneHeader.svg" alt="" width="40px" id="KitsuneHeaderID">
-            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
+            <img src="img/KitsuneHeader.svg" alt="imagen de kanji" id="KitsuneHeaderID">
+            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox" >
             <label class="menuHamburguesa" for="check-icon">
                 <div class="bar bar--1"></div>
                 <div class="bar bar--2"></div>
@@ -33,18 +33,20 @@
     <main class="container">
 
             <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <div class="contenedorRedesSociales">
-                <img src="img/contacto/icon_Instagram.svg" alt="" width="25px">
-                <p>Lorem ipsum dolor sit</p>
-            </div>
-            <div class="contenedorRedesSociales">
-                <img src="img/contacto/icon_X.svg" alt="" width="25px">
-                <p>Lorem ipsum dolor sit</p>
-            </div>
-            <div class="contenedorRedesSociales">
-                <img src="img/contacto/icon_Correo.svg" alt="" width="25px">
-                <p>Lorem ipsum dolor sit</p>
-            </div>
+            <table class="contenedorRedesSociales">
+                <tr>
+                    <td><img src="img/contacto/icon_Instagram.svg" alt="logo de instagram" class="iconRedeSocial"></td>
+                    <td><p>Instagram</p></td>
+                </tr>
+                <tr>
+                    <td><img src="img/contacto/icon_X.svg" alt="logo de x (twitter)" class="iconRedeSocial"></td>
+                    <td><p>Nuestro twitter</p></td>
+                </tr>
+                <tr>
+                    <td><img src="img/contacto/icon_Correo.svg" class="iconRedeSocial"></td>
+                    <td><p>Nuestro correo electrónico</p></td>
+                </tr>
+            </table>
 
             <div id="formularioContacto">
                 <form action="">

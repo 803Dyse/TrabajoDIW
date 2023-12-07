@@ -26,7 +26,6 @@ h1>a{
   align-items: top;
   justify-content: space-between;
   height: 100px;
-  background-image: url(../img/Unmasked_Favicon.svg);
 }
 
 .contenedorMosaico div:last-child {
@@ -45,3 +44,30 @@ h1>a{
     height: 25px;
 }
 
+#contenedor1{
+  background-image: url(../img/explorar/templatePremium1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+#contenedor2{
+  background-image: url(../img/explorar/templatePremium2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#contenedor3{
+  background-image: url(../img/explorar/TemplateGratis1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#contenedor4{
+  background-image: url(../img/explorar/TemplateGratis2.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.meGusta {
+  font-size: small;
+}

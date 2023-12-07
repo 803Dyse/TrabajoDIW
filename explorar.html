@@ -14,8 +14,8 @@
     <header id="header">
         <nav>
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
-            <img src="img/KitsuneHeader.svg" alt="" width="40px" id="KitsuneHeaderID">
-            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
+            <img src="img/KitsuneHeader.svg" alt="imagen de kanji" id="KitsuneHeaderID">
+            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox" >
             <label class="menuHamburguesa" for="check-icon">
                 <div class="bar bar--1"></div>
                 <div class="bar bar--2"></div>
@@ -33,24 +33,19 @@
     <main>
         <section>
             <article>
-                <h1 id="tituloExplorar">Estos son nuestros modelos <a href="premium.html">premium</a>. Si buscas algo mas completo, hecha un vistazo!</h1>
+                <h1 id="tituloExplorar">Estos son nuestros modelos <a href="premium.html">premium</a>. Si buscas algo
+                    mas completo, hecha un vistazo!</h1>
                 <div class="contenedorMosaico">
+                    <div id="contenedor1"></div>
                     <div>
-                        <p>Nuevo modelo!</p>
-                        <img src="img/explorar/icon_Heart.svg" alt="corazon de like">
-                    </div>
-                    <div>
-                        <p>Me gusta</p>
+                        <p class="meGusta">Me gusta</p>
                         <img src="img/explorar/icon_HeartFill.svg" alt="corazon cantidad de likes">
                     </div>
                 </div>
                 <div class="contenedorMosaico">
+                    <div id="contenedor2"></div>
                     <div>
-                        <p>Nuevo modelo!</p>
-                        <img src="img/explorar/icon_Heart.svg" alt="corazon de like">
-                    </div>
-                    <div>
-                        <p>Me gusta</p>
+                        <p class="meGusta">Me gusta</p>
                         <img src="img/explorar/icon_HeartFill.svg" alt="corazon cantidad de likes">
                     </div>
                 </div>
@@ -58,22 +53,16 @@
             <article>
                 <h1 id="tituloExplorar">Quieres algo mas sencillo y práctico? Prueba nuestras plantillas gratis!</h1>
                 <div class="contenedorMosaico">
+                    <div id="contenedor3"></div>
                     <div>
-                        <p>Nuevo modelo!</p>
-                        <img src="img/explorar/icon_Heart.svg" alt="corazon de like">
-                    </div>
-                    <div>
-                        <p>Me gusta</p>
+                        <p class="meGusta">Me gusta</p>
                         <img src="img/explorar/icon_HeartFill.svg" alt="corazon cantidad de likes">
                     </div>
                 </div>
                 <div class="contenedorMosaico">
+                    <div id="contenedor4"></div>
                     <div>
-                        <p>Nuevo modelo!</p>
-                        <img src="img/explorar/icon_Heart.svg" alt="corazon de like">
-                    </div>
-                    <div>
-                        <p>Me gusta</p>
+                        <p class="meGusta">Me gusta</p>
                         <img src="img/explorar/icon_HeartFill.svg" alt="corazon cantidad de likes">
                     </div>
                 </div>
@@ -89,13 +78,13 @@
         // Obtén elementos del DOM
         const menuCheckbox = document.getElementById('menuCheckbox');
         const menuList = document.getElementById('menuList');
-     
+
         // Agrega un evento de clic al checkbox del menú
         menuCheckbox.addEventListener('click', () => {
-           // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
-           menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
+            // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
+            menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
         });
-     </script>
+    </script>
 </body>
 
 </html>

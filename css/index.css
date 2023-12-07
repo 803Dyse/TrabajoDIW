@@ -205,6 +205,7 @@ ______                                _                              _     _ _
   }
 
   #imgContenedor2 {
+    width: 159px;
     grid-row: span 2;
     align-self: center;
     border-radius: 10px;
