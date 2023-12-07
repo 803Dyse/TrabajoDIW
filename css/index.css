@@ -190,6 +190,7 @@ ______                                _                              _     _ _
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    color: #051923;
   }
 
   #contenedor2p1 {

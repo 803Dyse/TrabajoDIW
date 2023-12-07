@@ -4,8 +4,15 @@ article {
   gap: 20px;
 }
 
+/*Selector para quitar estilos del <a>.*/
+h1>a{
+  color: #003554;  
+  text-decoration: none;
+}
+
 #tituloExplorar {
-  font-size: 16px;
+  line-height: 1.2;
+  font-size: 14px;
   grid-column: span 2;
 }
 .contenedorMosaico {
