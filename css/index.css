@@ -1,28 +1,21 @@
-
-
-
-
-
-
-
 /* Ejemplo de media query para dispositivos móviles */
-  .container {
-    margin: 0;
-    overflow-x: hidden;
-  }
+.container {
+  margin: 0;
+  overflow-x: hidden;
+}
 
-  .container::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    filter: blur(3.4px); /* Ajusta el valor de blur según tu preferencia */
-  }
+.container::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  filter: blur(3.4px); /* Ajusta el valor de blur según tu preferencia */
+}
 
-  /*
+/*
  _____ _ _         _                 _           _           
 |_   _(_) |       | |               (_)         | |          
   | |  _| |_ _   _| | ___  ___       _ _ __   __| | _____  __
@@ -31,46 +24,46 @@
   \_/ |_|\__|\__,_|_|\___/|___/     |_|_| |_|\__,_|\___/_/\_\                                
 */
 
-  #tituloIndex {
-    margin-top: 28px;
-    font-size: 25px;
-    margin-left: 40%;
-    color: #003554;
-  }
+#tituloIndex {
+  margin-top: 28px;
+  font-size: 25px;
+  margin-left: 40%;
+  color: #003554;
+}
 
-  #tituloIndexDos {
-    font-size: 25px;
-    margin-left: 20%;
-    margin-bottom: 28;
-    color: #003554;
-  }
+#tituloIndexDos {
+  font-size: 25px;
+  margin-left: 20%;
+  margin-bottom: 28;
+  color: #003554;
+}
 
-  /*Este codigo es animacion de slide hacia la izquierda, para el primer texto del indice*/
-  .slide-left {
-    animation: slide-left 0.9s both;
+/*Este codigo es animacion de slide hacia la izquierda, para el primer texto del indice*/
+.slide-left {
+  animation: slide-left 0.9s both;
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
   }
-  @keyframes slide-left {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100px);
-    }
+  100% {
+    transform: translateX(-100px);
   }
-  /*Este codigo es animacion de slide hacia la derecha, para el segundo texto del indice*/
-  .slide-right {
-    animation: slide-right 0.9s both;
+}
+/*Este codigo es animacion de slide hacia la derecha, para el segundo texto del indice*/
+.slide-right {
+  animation: slide-right 0.9s both;
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
   }
-  @keyframes slide-right {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(100px);
-    }
+  100% {
+    transform: translateX(100px);
   }
+}
 
-  /*
+/*
  _           _                        
 | |         | |                       
 | |__   ___ | |_ ___  _ __   ___  ___ 
@@ -78,25 +71,155 @@
 | |_) | (_) | || (_) | | | |  __/\__ \
 |_.__/ \___/ \__\___/|_| |_|\___||___/                                                                
 */
-  /*Aqui tocamos los botones del body*/
+/*Aqui tocamos los botones del body*/
+#suscribirse,
+#registrarse {
+  padding: 5px;
+  border-radius: 17px;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  background-color: #051923;
+  color: #00a6fb;
+  width: 170px;
+}
+#suscribirse:hover,
+#registrarse:hover {
+  background-color: #003554;
+
+  color: hsl(0, 0%, 100%);
+  box-shadow: #003554 0px 7px 29px 0px;
+}
+
+#suscribirse:active,
+#registrarse:active {
+  background-color: #00a6fb;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #00a6fb 0px 0px 0px 0px;
+  transform: translateX(5px);
+  transition: 100ms;
+}
+
+#registrarse {
+  margin-top: 8px;
+}
+
+#registrarse > a,
+#registrarse > a:visited,
+#registrarse > a:active,
+#suscribirse > a,
+#suscribirse > a:visited,
+#suscribirse > a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+#contenedorBotones {
+  /*Quiero que estos botones esten arriba a la izquierda con grid.*/
+  position: relative;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 4%;
+  /*Ahora quiero que cada boton esté uno arriba del otro, este div solo controla 2 botones.*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+}
+
+/*
+   ___           _         _        __           _            
+  / _ \__ _ _ __| |_ ___  (_)_ __  / _| ___ _ __(_) ___  _ __ 
+ / /_)/ _` | '__| __/ _ \ | | '_ \| |_ / _ \ '__| |/ _ \| '__|
+/ ___/ (_| | |  | ||  __/ | | | | |  _|  __/ |  | | (_) | |   
+\/    \__,_|_|   \__\___| |_|_| |_|_|  \___|_|  |_|\___/|_|   
+*/
+#tituloParte2Index {
+  margin-top: 5%;
+  font-size: 20px;
+  line-height: 0.9;
+  color: #003554;
+}
+
+#contenedor2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  color: #051923;
+}
+
+#contenedor2p1 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#contenedor2p1,
+#contenedor2p2 {
+  font-size: 16px;
+  /* line-height: 1; */
+  text-align: left;
+}
+
+#imgContenedor2 {
+  width: 159px;
+  grid-row: span 2;
+  align-self: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#enlaceContacto,
+#enlaceExplorar {
+  color: #003554;
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*Responsive Desktop (1920x1080)*/
+@media screen and (min-width: 361px) {
+  .container {
+    margin-left: 24%;
+    width: 70%;
+  }
+
+  /*Titulos del indice*/
+  #tituloIndex {
+    margin-top: 28px;
+    font-size: 50px;
+    margin-left: 20%;
+    color: #003554;
+  }
+
+  #tituloIndexDos {
+    font-size: 50px;
+    margin-left: 30%;
+    margin-bottom: 28;
+    color: #003554;
+  }
+
+  /*Botones del indice*/
   #suscribirse,
   #registrarse {
-    padding: 5px;
+    padding: 10px;
     border-radius: 17px;
     background-color: white;
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 18px;
     transition: all 0.5s ease;
     background-color: #051923;
     color: #00a6fb;
-    width: 170px;
+    width: 220px;
   }
   #suscribirse:hover,
   #registrarse:hover {
     background-color: #003554;
-
     color: hsl(0, 0%, 100%);
     box-shadow: #003554 0px 7px 29px 0px;
   }
@@ -138,64 +261,45 @@
     height: auto;
   }
 
-  /*
-   ___           _         _        __           _            
-  / _ \__ _ _ __| |_ ___  (_)_ __  / _| ___ _ __(_) ___  _ __ 
- / /_)/ _` | '__| __/ _ \ | | '_ \| |_ / _ \ '__| |/ _ \| '__|
-/ ___/ (_| | |  | ||  __/ | | | | |  _|  __/ |  | | (_) | |   
-\/    \__,_|_|   \__\___| |_|_| |_|_|  \___|_|  |_|\___/|_|   
-*/
+  /*Parte inferior*/
   #tituloParte2Index {
-    margin-top: 5%;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 0.9;
     color: #003554;
   }
-
+  
   #contenedor2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     color: #051923;
   }
-
+  
   #contenedor2p1 {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 4%;
+    margin-bottom: 2%
   }
-
+  
   #contenedor2p1,
   #contenedor2p2 {
-    font-size: 16px;
+    font-size: 20px;
     /* line-height: 1; */
     text-align: left;
   }
-
+  
   #imgContenedor2 {
-    width: 159px;
+    width: 300px;
     grid-row: span 2;
     align-self: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10%;
+    margin-left: 5%;
   }
-
+  
   #enlaceContacto,
   #enlaceExplorar {
     color: #003554;
     text-decoration: none;
   }
-
-
-
-/*------------------------------------------------------------------------*/
-
-
-
-/*Responsive Desktop (1920x1080)*/
-@media screen and (min-width: 361px){
-
-
-
-
-
 }
