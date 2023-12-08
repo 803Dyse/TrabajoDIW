@@ -40,8 +40,7 @@ form {
   border-radius: 5px;
 }
 
-
-legend{
+legend {
   padding-top: 10px;
   padding-left: 10px;
   text-align: center;
@@ -49,8 +48,8 @@ legend{
   margin-bottom: 20px;
 }
 
-div>label{
-  color:#051923;
+div > label {
+  color: #051923;
 }
 
 div > input {
@@ -71,12 +70,10 @@ label {
   font-size: 14px;
 }
 
-#txtUsuario{
- 
+#txtUsuario {
   width: 290px;
   height: 80px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 #btnEnviar {
@@ -85,6 +82,72 @@ label {
   padding: 10px;
 }
 
-#btnEnviar:hover{
+#btnEnviar:hover {
   color: #ffffff;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*Responsive Desktop (1920x1080)*/
+@media screen and (min-width: 480px) {
+  #hablaConNosotros {
+    margin-top: 2%;
+    font-size: 45px;
+  }
+
+  .iconRedeSocial {
+    width: 40px;
+  }
+
+  td > p {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  tbody {
+    margin-right: 4%;
+    margin-bottom: 2%;
+  }
+
+  legend {
+    font-size: 30px;
+  }
+
+  form {
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 480px;
+  }
+
+  .contenedorInputs {
+    margin-left: 4%;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  #enviarMensaje {
+    margin-left: 4%;
+  }
+
+  .inputFormContacto > input {
+    border-radius: 5px;
+    height: 40px;
+  }
+
+  #txtUsuario {
+    margin-bottom: -90px;
+    margin-left: -200px;
+    border-radius: 5px;
+  }
+
+  #btnEnviar {
+    margin-top: 110px;
+    margin-left: 37.7%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+  }
 }

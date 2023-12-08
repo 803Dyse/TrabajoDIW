@@ -34,7 +34,6 @@ form > h2 {
   text-decoration: none;
   color: inherit;
   color: #003554;
-
 }
 
 #btnRegistrar {
@@ -51,4 +50,54 @@ form > h2 {
 
 div > img {
   width: 25px;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*Responsive Desktop (1920x1080)*/
+@media screen and (min-width: 480px) {
+
+  form{
+    margin-top: 5%;
+  }
+
+  #titulo1 {
+    margin-top: 20px;
+    font-size: 36px;
+  }
+
+  h2 {
+    padding-top: 5%;
+    font-size: 50px;
+  }
+
+  a:last-child{
+    font-size: 20px;
+  }
+
+  
+.contenedorInput {
+  display: flex;
+  justify-content: center;
+  margin-right: 2%;
+  margin-bottom: 0.9%;
+}
+
+.contenedorInput > input {
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 30%;
+  height: 40px;
+}
+
+.contenedorInput>img{
+  width: 45px;
+}
+#btnRegistrar{
+  margin-top: 5%;
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  margin-left: 41.2%;
+}
 }
