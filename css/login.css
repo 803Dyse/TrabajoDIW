@@ -48,7 +48,7 @@ form > h2 {
   margin-top: 15%;
   margin-bottom: 15%;
 }
-#btnFormulario:hover{
+#btnFormulario:hover {
   color: #ffffff;
 }
 div > img {
@@ -72,4 +72,74 @@ div > img {
   text-decoration: none;
   color: inherit;
   color: #003554;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*Responsive Desktop (1920x1080)*/
+@media screen and (min-width: 480px) {
+  #titulo1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+
+  #contenedorLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 602px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  form {
+    height: 599px;
+    width: 100%; /* Mantiene el ancho del formulario */
+  }
+
+  .img {
+    margin-left: 30px;
+  }
+
+  .iconLogin {
+    width: 60px;
+  }
+
+  .inputTxt {
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+  }
+
+  #btnFormulario{
+    margin-top: 40px;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    margin-bottom: -40px;
+  }
+
+  .anchorBacano{
+    font-size: 18px;
+  }
+
+  .anchorBacano:first-child{
+    margin-right: 55px;
+    margin-bottom: 90px;
+  }
+
+  .anchorBacano:last-child{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  #anchorRegistrar{
+    margin-top: 200px;
+  }
+
 }

@@ -134,19 +134,53 @@ form {
   /* Estilos adicionales si es necesario */
 }
 
-
 /*------------------------------------------------------------------------*/
 
 /*Responsive Desktop (1920x1080)*/
-@media screen and (min-width: 480px){
-form{
-  width: 50%;
-}
-#datosDelUsuario{
-  display: grid;
-  justify-content: center;
+@media screen and (min-width: 480px) {
+  caption {
+    margin-top: 80px;
+    font-size: 36px;
+  }
+
+  table {
+    padding: 10px;
+    width: 340px;
+    height: 120px;
+  }
+  td,
+  th {
+    font-size: 30px;
+  }
+
+  #formasDePago{
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+
+#formasDePago>button{
+width: 100px;
+height: 40px;
 }
 
-#datosDelUsuario
+  form {
+    margin-left: 285px;
+    width: 50%;
+  }
 
+#separador>p{
+  font-size: 18px;
+}
+
+#logoPayment{
+  width: 40px;
+}
+
+.inputDeTarjeta{
+  height: 35px;
+}
+
+  .botonBacano{
+    margin-left: 215px;
+  }
 }
