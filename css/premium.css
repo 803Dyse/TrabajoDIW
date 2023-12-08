@@ -133,3 +133,20 @@ form {
   width: 25%;
   /* Estilos adicionales si es necesario */
 }
+
+
+/*------------------------------------------------------------------------*/
+
+/*Responsive Desktop (1920x1080)*/
+@media screen and (min-width: 361px){
+form{
+  width: 50%;
+}
+#datosDelUsuario{
+  display: grid;
+  justify-content: center;
+}
+
+#datosDelUsuario
+
+}
