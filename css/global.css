@@ -281,7 +281,7 @@ main {
 /*------------------------------------------------------------------------*/
 
 /*Responsive Desktop (1920x1080)*/
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 480px) {
   header,
   main,
   footer {
