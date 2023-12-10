@@ -2,6 +2,17 @@
 <html lang="es">
 
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-49CCYMJJVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-49CCYMJJVN');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unmasked Portfolio Maker</title>
@@ -66,7 +77,8 @@
             </div>
             <div id="datosDelUsuario">
                 <div class="inputPayment">
-                    <img src="img/premium/icon_Cardholder.svg" alt="logo de un muñeco" id="logoPayment" class="logoPayments">
+                    <img src="img/premium/icon_Cardholder.svg" alt="logo de un muñeco" id="logoPayment"
+                        class="logoPayments">
                     <input type="text" required class="inputDeTarjeta">
                 </div>
                 <div class="inputPayment">
@@ -75,9 +87,11 @@
                     <input type="text" required class="inputDeTarjeta">
                 </div>
                 <div class="inputPayment">
-                    <img src="img/premium/icon_Calendar.svg" id="logoPayment" alt="logo de un calendario" class="logoPayments">
+                    <img src="img/premium/icon_Calendar.svg" id="logoPayment" alt="logo de un calendario"
+                        class="logoPayments">
                     <input type="text" required class="inputDeTarjeta">
-                    <img src="img/login/icon_Password.svg" id="logoPayment" alt="logo de un candado" class="logoPayments">
+                    <img src="img/login/icon_Password.svg" id="logoPayment" alt="logo de un candado"
+                        class="logoPayments">
                     <input type="number" required class="inputDeTarjeta" id="cvv" min="3" max="3">
                 </div>
                 <button type="submit" class="botonBacano" required><span>Enviar</span></button>

@@ -2,6 +2,17 @@
 <html lang="es">
 
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-49CCYMJJVN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-49CCYMJJVN');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unmasked Portfolio Maker</title>
@@ -15,7 +26,7 @@
         <nav>
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
             <img src="img/KitsuneHeader.svg" alt="imagen de kanji" id="KitsuneHeaderID">
-            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox" >
+            <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
             <label class="menuHamburguesa" for="check-icon">
                 <div class="bar bar--1"></div>
                 <div class="bar bar--2"></div>
@@ -34,20 +45,21 @@
         <h1 id="titulo1">Desde tu cuenta unmasked, tienes acceso ilimitado a todas nuestras plantillas grátis.</h1>
         <div id="contenedorLogin">
             <form action="">
-               
+
                 <h2>Login unmasked</h2>
                 <div class="img">
-                    <img src="img/login/icon_Username.svg" class="iconLogin" alt="logo de un muñeco" >
+                    <img src="img/login/icon_Username.svg" class="iconLogin" alt="logo de un muñeco">
                     <input class="inputTxt" type="text" required>
                 </div>
                 <br>
                 <div class="img">
-                    <img src="img/login/icon_Password.svg" class="iconLogin" alt="logo de un candado" >
+                    <img src="img/login/icon_Password.svg" class="iconLogin" alt="logo de un candado">
                     <input class="inputTxt" type="password" required>
                 </div>
-                <p id="pContrasena"><a class="anchorBacano" href="" >Olvidaste tu contraseña?</a></p>
+                <p id="pContrasena"><a class="anchorBacano" href="">Olvidaste tu contraseña?</a></p>
                 <button id="btnFormulario" class="botonBacano">Entrar</button>
-                <p id="pRegistrar"><a class="anchorBacano" href="registrar.html" id="anchorRegistrar">Eres nuevo? Registrate ahora mismo!</a></p>
+                <p id="pRegistrar"><a class="anchorBacano" href="registrar.html" id="anchorRegistrar">Eres nuevo?
+                        Registrate ahora mismo!</a></p>
             </form>
         </div>
     </main>
@@ -60,13 +72,13 @@
         // Obtén elementos del DOM
         const menuCheckbox = document.getElementById('menuCheckbox');
         const menuList = document.getElementById('menuList');
-     
+
         // Agrega un evento de clic al checkbox del menú
         menuCheckbox.addEventListener('click', () => {
-           // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
-           menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
+            // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
+            menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
         });
-     </script>
+    </script>
 </body>
 
 </html>
