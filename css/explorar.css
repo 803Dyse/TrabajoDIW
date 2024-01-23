@@ -50,13 +50,15 @@ h1 > a {
 }
 
 #contenedor2 {
-  background-image: url(../img/explorar/templatePremium2.png);
+  /*   background-image: url(../img/explorar/templatePremium2.png); Esta era la ruta antigua de la imagen, la dejaremos comentada porque en el proyecto se pide que hagamos conversion de algunas imagenes y que se sustituyan la original por las convertidas. */
+  background-image: url(../img/explorar/TemplateGratis2.webp);
   background-size: cover;
   background-position: center;
 }
 
 #contenedor3 {
-  background-image: url(../img/explorar/TemplateGratis1.jpg);
+  /*     background-image: url(../img/explorar/TemplateGratis1.jpg); Esta era la ruta antigua de la imagen, la dejaremos comentada porque en el proyecto se pide que hagamos conversion de algunas imagenes y que se sustituyan la original por las convertidas. */
+  background-image: url(../img/explorar/TemplateGratis1.png);
   background-size: cover;
   background-position: center;
 }
