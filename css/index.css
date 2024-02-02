@@ -15,6 +15,13 @@
   filter: blur(3.4px); /* Ajusta el valor de blur según tu preferencia */
 }
 
+#videoFondo{
+  position: absolute;
+  width: 780px;
+  height: 380px;
+  opacity: 70%;
+}
+
 /*
  _____ _ _         _                 _           _           
 |_   _(_) |       | |               (_)         | |          
