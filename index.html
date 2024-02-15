@@ -30,12 +30,18 @@
 
 
 <body>
-    
+    <video width="" height="" autoplay id="videoFondo">
+        <source src="/video/backgroundVideo.mkv" type="video/mkv">
+        <source src="/video/backgroundVideo.m4v" type="video/m4v">
+        <source src="/video/backgroundVideo.mp4" type="video/mp4">
+        <source src="/video/backgroundVideo.webm" type="video/webm">
+        <source src="/video/backgroundVideo.wmv" type="video/wmv">
+    </video>
 
     <header id="header">
         <nav>
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
-            <img src="img/kitsuneHeader.jpg" alt="imagen de kanji" id="KitsuneHeaderID"> 
+            <img src="img/kitsuneHeader.jpg" alt="imagen de kanji" id="KitsuneHeaderID">
             <!-- <img src="img/KitsuneHeader.svg" alt="imagen de kanji" id="KitsuneHeaderID"> -->
             <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
             <label class="menuHamburguesa" for="check-icon">
@@ -52,14 +58,9 @@
             </div>
         </nav>
     </header>
+    
     <main class="container">
-        <video width="" height="" autoplay id="videoFondo">
-            <source src="/video/backgroundVideo.mkv" type="video/mkv">
-            <source src="/video/backgroundVideo.m4v" type="video/m4v">
-            <source src="/video/backgroundVideo.mp4" type="video/mp4">
-            <source src="/video/backgroundVideo.webm" type="video/webm">
-            <source src="/video/backgroundVideo.wmv" type="video/wmv">
-        </video>
+
         <h1 id="tituloIndex" class="slide-left text-focus-in">Tu Portafolio.. </h1>
         <div id="contenedorBotones">
             <button id="suscribirse"><a href="premium.html">Quiero ser premium</a></button>
@@ -82,6 +83,7 @@
         <p id="txtFooter2">Bilo Alejandro Martins Gonzalez</p>
         <p id="txtFooter3">@alexdyse</p>
     </footer>
+    
     <script>
         // Obtén elementos del DOM
         const menuCheckbox = document.getElementById('menuCheckbox');
