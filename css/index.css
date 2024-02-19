@@ -81,7 +81,7 @@
 |_.__/ \___/ \__\___/|_| |_|\___||___/                                                                
 */
 /*Aqui tocamos los botones del body*/
-#suscribirse,
+/* #suscribirse,
 #registrarse {
   padding: 5px;
   border-radius: 17px;
@@ -94,8 +94,8 @@
   background-color: #051923;
   color: #00a6fb;
   width: 170px;
-}
-#suscribirse:hover,
+} */
+/* #suscribirse:hover,
 #registrarse:hover {
   background-color: #003554;
 
@@ -110,7 +110,7 @@
   box-shadow: #00a6fb 0px 0px 0px 0px;
   transform: translateX(5px);
   transition: 100ms;
-}
+} */
 
 #registrarse {
   margin-top: 8px;
@@ -223,7 +223,7 @@
   }
 
   /*Botones del indice*/
-  #suscribirse,
+  /* #suscribirse,
   #registrarse {
     padding: 10px;
     border-radius: 17px;
@@ -251,7 +251,7 @@
     box-shadow: #00a6fb 0px 0px 0px 0px;
     transform: translateX(5px);
     transition: 100ms;
-  }
+  } */
 
   #registrarse {
     margin-top: 8px;

@@ -215,12 +215,12 @@ main {
 
 /*Esto que ves abajo es el boton animado que utilizaré repetidas veces, por esta razón lo voy a vincular a global, para no repetir codigo.*/
 
-.botonBacano {
+/* .botonBacano {
   width: 25%;
   margin-left: 28%;
   height: 30px;
   border-radius: 3px;
-}
+} */
 
 #cvv {
   -moz-appearance: textfield;
@@ -230,7 +230,7 @@ main {
   border-radius: 3px;
 }
 
-.botonBacano {
+/* .botonBacano {
   display: inline-block;
   width: 150px;
   height: 40px;
@@ -240,8 +240,8 @@ main {
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   z-index: 1;
-}
-.botonBacano::before,
+} */
+/* .botonBacano::before,
 .botonBacano::after {
   content: "";
   position: absolute;
@@ -276,7 +276,7 @@ main {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
+} */
 
 /*------------------------------------------------------------------------*/
 
