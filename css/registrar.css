@@ -52,12 +52,18 @@ div > img {
   width: 25px;
 }
 
+#lblCorreo,
+#lblUsuario,
+#lblContrasena2,
+#lblConfirmarContrasena2 {
+  margin-left: 36.8%;
+}
+
 /*------------------------------------------------------------------------*/
 
 /*Responsive Desktop (1920x1080)*/
 @media screen and (min-width: 480px) {
-
-  form{
+  form {
     margin-top: 5%;
   }
 
@@ -71,33 +77,32 @@ div > img {
     font-size: 50px;
   }
 
-  a:last-child{
+  a:last-child {
     font-size: 20px;
   }
 
-  
-.contenedorInput {
-  display: flex;
-  justify-content: center;
-  margin-right: 2%;
-  margin-bottom: 0.9%;
-}
+  .contenedorInput {
+    display: flex;
+    justify-content: center;
+    margin-right: 2%;
+    margin-bottom: 0.9%;
+  }
 
-.contenedorInput > input {
-  border-radius: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 30%;
-  height: 40px;
-}
+  .contenedorInput > input {
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 30%;
+    height: 40px;
+  }
 
-.contenedorInput>img{
-  width: 45px;
-}
-#btnRegistrar{
-  margin-top: 5%;
-  font-size: 20px;
-  width: 200px;
-  height: 60px;
-  margin-left: 41.2%;
-}
+  .contenedorInput > img {
+    width: 45px;
+  }
+  #btnRegistrar {
+    margin-top: 5%;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    margin-left: 41.2%;
+  }
 }
