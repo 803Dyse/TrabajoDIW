@@ -87,6 +87,11 @@ label {
   color: #ffffff;
 }
 
+#lblEscribeAqui {
+  margin-left: 22%;
+  z-index: 1;
+}
+
 /*------------------------------------------------------------------------*/
 
 /*Responsive Desktop (1920x1080)*/
@@ -124,7 +129,6 @@ label {
     margin-left: 4%;
   }
 
-
   #enviarMensaje {
     margin-left: 4%;
   }
@@ -148,4 +152,4 @@ label {
     width: 200px;
     height: 60px;
   }
-} 
+}
