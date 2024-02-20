@@ -77,23 +77,20 @@
         <div id="formularioContacto">
             <form action="">
                 <legend>
-                    Tienes algun problema o necesitas reportar algun error?
+                    Tienes algun problema? Necesitas reportar algun error?
                 </legend>
                 <div class="contenedorInputs">
                     <div class="inputFormContacto">
-                        <input type="text" name="Nombre" id="" class="form-control" required placeholder="Nombre">
+                        <input type="text" name="Nombre" id="" class="form-control " required placeholder="Nombre" >
                     </div>
                     <div class="inputFormContacto">
-                        <label for="Apellido">Primer apellido</label>
-                        <input type="text" name="Apellido" id="" required placeholder="Primer apellido">
+                        <input type="text" name="Apellido" id="" class="form-control" required placeholder="Primer apellido">
                     </div>
                     <div class="inputFormContacto">
-                        <label for="Telefono">Teléfono de contacto</label>
-                        <input type="text" name="Telefono" id="" required placeholder="Numero de telefono">
+                        <input type="text" name="Telefono" id="" class="form-control" required placeholder="Numero de telefono">
                     </div>
                 </div>
-                <label for="txtUsuario" id="enviarMensaje">Introduce el mensaje</label>
-                <textarea name="txtUsuario" id="txtUsuario" required placeholder="Escribe aqui"></textarea>
+                <textarea name="txtUsuario" id="txtUsuario" class="form-control" required placeholder="Escribe aqui"></textarea>
                 <br>
                 <button type="submit" required value="Enviar" id="btnEnviar" class="btn btn-outline-dark">Enviar</button>
             </form>
