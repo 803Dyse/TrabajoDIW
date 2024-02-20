@@ -37,6 +37,10 @@ form > h2 {
   color: #003554;
 }
 
+#lblTxtUsuario, #lblTxtContrasena{
+  margin-left: 16.5%;
+}
+
 #pContrasena {
   display: flex;
   font-size: 10px;

@@ -23,7 +23,7 @@
     <meta name="keywords" content="portafolio, currículum, creatividad, arte, negocios, educación">
     <link rel="shortcut icon" href="Unmasked_Favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
@@ -54,14 +54,18 @@
             <form action="">
 
                 <h2>Login unmasked</h2>
-                <div class="img">
+                <div class="img form-floating">
                     <img src="img/login/icon_Username.svg" class="iconLogin" alt="logo de un muñeco">
-                    <input class="inputTxt" type="text" required>
+                    <input class="inputTxt form-control" type="text" required id="txtLogin"
+                        placeholder="Introduce tu usuario">
+                    <label for="txtLogin" class="" id="lblTxtUsuario">Introduce tu usuario</label>
                 </div>
                 <br>
-                <div class="img">
+                <div class="img form-floating">
                     <img src="img/login/icon_Password.svg" class="iconLogin" alt="logo de un candado">
-                    <input class="inputTxt" type="password" required>
+                    <input class="inputTxt form-control" type="password" required placeholder="Introduce tu contraseña">
+                    <label for="txtContrasena" class="" id="lblTxtContrasena">Introduce tu contraseña</label>
+
                 </div>
                 <p id="pContrasena"><a class="anchorBacano" href="">Olvidaste tu contraseña?</a></p>
                 <button id="btnFormulario" class="btn btn-outline-dark">Entrar</button>
@@ -87,8 +91,8 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
