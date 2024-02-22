@@ -43,7 +43,19 @@ h1 > a {
   height: 25px;
 }
 
-#contenedor1 {
+#contenedor1,
+#contenedor5,
+#contenedor6,
+#contenedor7,
+#contenedor8,
+#contenedor9,
+#contenedor10,
+#contenedor11,
+#contenedor12,
+#contenedor13,
+#contenedor14,
+#contenedor15,
+#contenedor16 {
   background-image: url(../img/explorar/templatePremium1.webp);
   background-size: cover;
   background-position: center;
@@ -85,10 +97,22 @@ h1 > a {
   #contenedor1,
   #contenedor2,
   #contenedor3,
-  #contenedor4 {
+  #contenedor4,
+  #contenedor5,
+  #contenedor6,
+  #contenedor7,
+  #contenedor8,
+  #contenedor9,
+  #contenedor10,
+  #contenedor11,
+  #contenedor12,
+  #contenedor13,
+  #contenedor14,
+  #contenedor15,
+  #contenedor16 {
     height: 300px;
   }
-  .meGusta{
+  .meGusta {
     font-size: 18px;
   }
 }

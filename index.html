@@ -71,7 +71,7 @@
         </div>
         <h1 id="tituloIndexDos" class="slide-right">...Tu Marca</h1>
 
-        <h4 id="tituloParte2Index">¿No sabes por donde empezar? <br>Mira algunas de nuestras plantillas</h4>
+        <h2 id="tituloParte2Index">¿No sabes por donde empezar? <br>Mira algunas de nuestras plantillas</h2>
         <div id="contenedor2">
             <p id="contenedor2p1">Ofrecemos el mejor servicio de la manera más comoda para obtener lo que necesitas. <a
                     href="explorar.html" id="enlaceExplorar">Explora</a>!</p>
@@ -87,16 +87,24 @@
         <p id="txtFooter3">@alexdyse</p>
     </footer>
 
-
+    <audio>
+        <source src="/TrabajoDIW/audio/menu.mp3" type="audio/mp3">
+        <source src="/TrabajoDIW/audio/menu.ogg" type="audio/ogg">
+        <source src="/TrabajoDIW/audio/menu.wav" type="audio/wav">
+        Tu navegador no soporta esta pista de sonido.
+    </audio>
     <script>
-        // Obtén elementos del DOM
         const menuCheckbox = document.getElementById('menuCheckbox');
         const menuList = document.getElementById('menuList');
+        const menuAudio = document.getElementById('menuAudio');
 
-        // Agrega un evento de clic al checkbox del menú
         menuCheckbox.addEventListener('click', () => {
-            // Toggle la visibilidad de la lista al hacer clic en el menú hamburguesa
             menuList.style.display = menuList.style.display === 'none' ? 'block' : 'none';
+            if (menuAudio.paused) {
+                menuAudio.play();
+            } else {
+                menuAudio.pause();
+            }
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
