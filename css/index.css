@@ -29,6 +29,7 @@
   font-size: 25px;
   margin-left: 40%;
   color: #003554;
+  margin-bottom: 5px;
 }
 
 #tituloIndexDos {
@@ -36,6 +37,7 @@
   margin-left: 20%;
   margin-bottom: 28;
   color: #003554;
+  margin-top: 7.8%;
 }
 
 /*Este codigo es animacion de slide hacia la izquierda, para el primer texto del indice*/
@@ -178,15 +180,15 @@
   text-decoration: none;
 }
 #videoFondo {
+  position: absolute;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  position: absolute;
   z-index: -1;
   display: flex;
   align-content: end;
   align-self: flex-end;
   width: 30%;
-  margin-top: -5.6%;
+  margin-top: -3.0%;
   margin-right: 40%;
 }
 /*------------------------------------------------------------------------*/
