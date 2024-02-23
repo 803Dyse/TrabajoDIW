@@ -23,7 +23,7 @@
     <meta name="keywords" content="portafolio, currículum, creatividad, arte, negocios, educación">
     <link rel="shortcut icon" href="Unmasked_Favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/explorar.css">
 </head>
@@ -34,7 +34,7 @@
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
             <img src="img/KitsuneHeader.svg" alt="imagen de kanji" id="KitsuneHeaderID">
             <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
-            <label class="menuHamburguesa" for="check-icon">
+            <label onclick="playSound()" class="menuHamburguesa" for="check-icon">
                 <div class="bar bar--1"></div>
                 <div class="bar bar--2"></div>
                 <div class="bar bar--3"></div>
@@ -48,7 +48,20 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container">
+        <!--Script que ejecuta el sonido del menú hamburguesa.-->
+        <script>
+            function playSound() {
+                const formatos = ["mp3", "ogg", "wav"];// Lista de audios en formatos distintos
+                for (const formato of formatos) {
+                    const audio = new Audio("audio/menu." + formato);
+                    if (audio.canPlayType("audio/" + formato)) {
+                        audio.play();
+                        return;
+                    }
+                }
+            }
+        </script>
         <section>
             <article>
                 <h1 id="tituloExplorar">Estos son nuestros modelos <a href="premium.html">premium</a>. ¡Si buscas algo
@@ -188,8 +201,8 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

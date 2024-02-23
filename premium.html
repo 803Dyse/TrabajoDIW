@@ -34,7 +34,7 @@
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
             <img src="img/KitsuneHeader.svg" alt="imagen de kanji" id="KitsuneHeaderID">
             <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
-            <label class="menuHamburguesa" for="check-icon">
+            <label onclick="playSound()" class="menuHamburguesa" for="check-icon">
                 <div class="bar bar--1"></div>
                 <div class="bar bar--2"></div>
                 <div class="bar bar--3"></div>
@@ -49,6 +49,19 @@
         </nav>
     </header>
     <main class="container">
+        <!--Script que ejecuta el sonido del menú hamburguesa.-->
+        <script>
+            function playSound() {
+                const formatos = ["mp3", "ogg", "wav"];// Lista de audios en formatos distintos
+                for (const formato of formatos) {
+                    const audio = new Audio("audio/menu." + formato);
+                    if (audio.canPlayType("audio/" + formato)) {
+                        audio.play();
+                        return;
+                    }
+                }
+            }
+        </script>
         <div id="tablaPrecios">
             <table>
                 <caption>precios</caption>
