@@ -26,9 +26,8 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav>
-            <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
+    <header id="header" role="banner">
+        <nav role="navigation">             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
             <img src="img/kitsuneHeader.jpg" alt="imagen de kanji" id="KitsuneHeaderID">
             <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
             <label onclick="playSound()" class="menuHamburguesa" for="check-icon" aria-label="Menú" role="button">
@@ -46,8 +45,7 @@
         </nav>
     </header>
 
-    <main class="container">
-        <!--Script que ejecuta el sonido del menú hamburguesa.-->
+    <main class="container" role="main">         <!--Script que ejecuta el sonido del menú hamburguesa.-->
         <script>
             function playSound() {
                 const formatos = ["mp3", "ogg", "wav"];// Lista de audios en formatos distintos
@@ -72,13 +70,13 @@
             </video>
 
             <button id="suscribirse" class="btn btn-outline-dark" aria-label="Quiero ser premium">
-                <a href="premium.html" class="premium-link">Quiero ser premium</a> 
-              </button>
-              
-              <button id="registrarse" class="btn btn-outline-dark" aria-label="¿Eres nuevo? Regístrate ya">
+                <a href="premium.html" class="premium-link">Quiero ser premium</a>
+            </button>
+
+            <button id="registrarse" class="btn btn-outline-dark" aria-label="¿Eres nuevo? Regístrate ya">
                 <a href="registrar.html" class="register-link">¿Eres nuevo? Regístrate ya</a>
-              </button>
-              
+            </button>
+
         </div>
         <h1 id="tituloIndexDos" class="slide-right">...Tu Marca</h1>
 
@@ -92,8 +90,7 @@
                 nosotros! </p>
         </div>
     </main>
-    <footer id="footer">
-        <p id="txtFooter1">Copyright © 2023 </p>
+    <footer id="footer" role="contentinfo">         <p id="txtFooter1">Copyright © 2023 </p>
         <p id="txtFooter2">Bilo Alejandro Martins Gonzalez</p>
         <p id="txtFooter3">@alexdyse</p>
     </footer>

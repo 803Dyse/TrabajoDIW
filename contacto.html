@@ -27,9 +27,9 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav>
-            <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
+    <header id="header" role="banner">
+        <nav role="navigation"> <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web"
+                    id="logoID"></a>
             <img src="img/kitsuneHeader.jpg" alt="imagen de kanji" id="KitsuneHeaderID">
             <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
             <label onclick="playSound()" class="menuHamburguesa" for="check-icon" aria-label="Menú" role="button">
@@ -46,8 +46,7 @@
             </div>
         </nav>
     </header>
-    <main class="container">
-        <!--Script que ejecuta el sonido del menú hamburguesa.-->
+    <main class="container" role="main"> <!--Script que ejecuta el sonido del menú hamburguesa.-->
         <script>
             function playSound() {
                 const formatos = ["mp3", "ogg", "wav"];// Lista de audios en formatos distintos
@@ -93,19 +92,22 @@
                 </legend>
                 <div class="contenedorInputs">
                     <div class="inputFormContacto">
-                      <label for="nombre" class="visually-hidden">Nombre</label>
-                      <input type="text" name="Nombre" id="nombre" class="form-control required" placeholder="Introduce tu nombre">
+                        <label for="nombre" class="visually-hidden">Nombre</label>
+                        <input type="text" name="Nombre" id="nombre" class="form-control required"
+                            placeholder="Introduce tu nombre">
                     </div>
                     <div class="inputFormContacto">
-                      <label for="apellido" class="visually-hidden">Primer apellido</label>
-                      <input type="text" name="Apellido" id="apellido" class="form-control required" placeholder="Introduce tu primer apellido">
+                        <label for="apellido" class="visually-hidden">Primer apellido</label>
+                        <input type="text" name="Apellido" id="apellido" class="form-control required"
+                            placeholder="Introduce tu primer apellido">
                     </div>
                     <div class="inputFormContacto">
-                      <label for="telefono" class="visually-hidden">Número de teléfono</label>
-                      <input type="text" name="Telefono" id="telefono" class="form-control required" placeholder="Introduce tu número de teléfono">
+                        <label for="telefono" class="visually-hidden">Número de teléfono</label>
+                        <input type="text" name="Telefono" id="telefono" class="form-control required"
+                            placeholder="Introduce tu número de teléfono">
                     </div>
-                  </div>
-                  
+                </div>
+
                 <div class="form-floating">
                     <textarea name="txtUsuario" id="txtUsuario" class="form-control" required
                         placeholder="Escribe aqui"></textarea>
@@ -117,7 +119,7 @@
             </form>
         </div>
     </main>
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
         <p id="txtFooter1">Copyright © 2023 </p>
         <p id="txtFooter2">Bilo Alejandro Martins Gonzalez</p>
         <p id="txtFooter3">@alexdyse</p>

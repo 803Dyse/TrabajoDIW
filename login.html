@@ -27,9 +27,9 @@
 </head>
 
 <body>
-    <header id="header">
-        <nav>
-            <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
+    <header id="header" role="banner">
+        <nav role="navigation"> <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web"
+                    id="logoID"></a>
             <img src="img/kitsuneHeader.jpg" alt="imagen de kanji" id="KitsuneHeaderID">
             <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
             <label onclick="playSound()" class="menuHamburguesa" for="check-icon" aria-label="Menú" role="button">
@@ -46,7 +46,7 @@
             </div>
         </nav>
     </header>
-    <main class="container">
+    <main class="container" role="main">
         <!--Script que ejecuta el sonido del menú hamburguesa.-->
         <script>
             function playSound() {
@@ -74,18 +74,19 @@
                 <br>
                 <div class="img form-floating">
                     <img src="img/login/icon_Password.svg" class="iconLogin" alt="logo de un candado">
-                    <input class="inputTxt form-control" type="password" required placeholder="Introduce tu contraseña" id="txtContrasena">
+                    <input class="inputTxt form-control" type="password" required placeholder="Introduce tu contraseña"
+                        id="txtContrasena">
                     <label for="txtContrasena" id="lblTxtContrasena">Introduce tu contraseña</label>
 
                 </div>
                 <p id="pContrasena"><a class="anchorBacano" href="">Olvidaste tu contraseña?</a></p>
-                <button id="btnFormulario" class="btn btn-outline-dark">Entrar</button>
+                <button type="submit" id="btnFormulario" class="btn btn-outline-dark">Entrar</button>
                 <p id="pRegistrar"><a class="anchorBacano" href="registrar.html" id="anchorRegistrar">Eres nuevo?
                         Registrate ahora mismo!</a></p>
             </form>
         </div>
     </main>
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
         <p id="txtFooter1">Copyright © 2023 </p>
         <p id="txtFooter2">Bilo Alejandro Martins Gonzalez</p>
         <p id="txtFooter3">@alexdyse</p>
