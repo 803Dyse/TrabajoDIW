@@ -30,20 +30,20 @@
     <header id="header">
         <nav>
             <a href="index.html"><img src="img/Unmasked_Full.svg" alt="Logo de la web" id="logoID"></a>
-            <img src="img/KitsuneHeader.svg" alt="imagen de kanji" id="KitsuneHeaderID">
+            <img src="img/kitsuneHeader.jpg" alt="imagen de kanji" id="KitsuneHeaderID">
             <input hidden class="check-icon" id="check-icon" name="check-icon" type="checkbox">
-            <label onclick="playSound()" class="menuHamburguesa" for="check-icon" aria-label="Menú hamburguesa">
+            <label onclick="playSound()" class="menuHamburguesa" for="check-icon" aria-label="Menú" role="button">
                 <div class="bar bar--1"></div>
                 <div class="bar bar--2"></div>
                 <div class="bar bar--3"></div>
-            </label>            
-            <div class="enlaces-menu">
-                <a href="explorar.html">Explorar</a>
-                <a href="premium.html">Premium</a>
-                <a href="login.html">Login</a>
-                <a href="registrar.html">Registrar</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
+            </label>
+            <div class="enlaces-menu" role="navigation" aria-label="Menú de navegación principal">
+                <a href="explorar.html" role="menuitem">Explorar</a>
+                <a href="premium.html" role="menuitem">Premium</a>
+                <a href="login.html" role="menuitem">Login</a>
+                <a href="registrar.html" role="menuitem">Registrar</a>
+                <a href="contacto.html" role="menuitem">Contacto</a>
+            </div>       
         </nav>
     </header>
     <main class="container">
