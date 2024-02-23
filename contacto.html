@@ -63,21 +63,23 @@
         <h1 id="hablaConNosotros">Habla con nosotros.</h1>
         <table class="contenedorRedesSociales">
             <tr>
-                <td><a href=""><img src="img/contacto/icon_Instagram.svg" alt="logo de instagram"
+                <td><a href="https://instagram.com"><img src="img/contacto/icon_Instagram.svg" alt="logo de instagram"
                             class="iconRedeSocial"></a></td>
                 <td>
                     <p>Instagram</p>
                 </td>
             </tr>
             <tr>
-                <td><a href=""><img src="img/contacto/icon_X.svg" alt="logo de x (twitter)" class="iconRedeSocial"></a>
+                <td><a href="https://twitter.com"><img src="img/contacto/icon_X.svg" alt="logo de x (twitter)"
+                            class="iconRedeSocial"></a>
                 </td>
                 <td>
                     <p>Twitter</p>
                 </td>
             </tr>
             <tr>
-                <td><a href=""><img src="img/contacto/icon_Correo.svg" class="iconRedeSocial"></a></td>
+                <td><a href="https://gmail.com"><img src="img/contacto/icon_Correo.svg" class="iconRedeSocial"
+                            alt="logo de gmail"></a></td>
                 <td>
                     <p>Correo electrónico</p>
                 </td>
@@ -91,17 +93,19 @@
                 </legend>
                 <div class="contenedorInputs">
                     <div class="inputFormContacto">
-                        <input type="text" name="Nombre" id="" class="form-control " required placeholder="Nombre">
+                      <label for="nombre" class="visually-hidden">Nombre</label>
+                      <input type="text" name="Nombre" id="nombre" class="form-control required" placeholder="Introduce tu nombre">
                     </div>
                     <div class="inputFormContacto">
-                        <input type="text" name="Apellido" id="" class="form-control" required
-                            placeholder="Primer apellido">
+                      <label for="apellido" class="visually-hidden">Primer apellido</label>
+                      <input type="text" name="Apellido" id="apellido" class="form-control required" placeholder="Introduce tu primer apellido">
                     </div>
                     <div class="inputFormContacto">
-                        <input type="text" name="Telefono" id="" class="form-control" required
-                            placeholder="Numero de telefono">
+                      <label for="telefono" class="visually-hidden">Número de teléfono</label>
+                      <input type="text" name="Telefono" id="telefono" class="form-control required" placeholder="Introduce tu número de teléfono">
                     </div>
-                </div>
+                  </div>
+                  
                 <div class="form-floating">
                     <textarea name="txtUsuario" id="txtUsuario" class="form-control" required
                         placeholder="Escribe aqui"></textarea>
