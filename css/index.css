@@ -105,6 +105,10 @@
   transition: 100ms;
 } */
 
+.premium-link, .register-link {
+  text-decoration: underline; 
+}
+
 #registrarse {
   margin-top: 8px;
 }
