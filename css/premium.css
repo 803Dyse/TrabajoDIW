@@ -18,7 +18,7 @@
   width: 80px;
 }
 #tablaPrecios table {
-  margin-bottom: 30px;
+  
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   caption-side: top;
@@ -29,6 +29,11 @@ caption {
   font-variant: small-caps;
   text-shadow: #051923;
   text-decoration: underline;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 10px;
   text-align: center;
 }
 
