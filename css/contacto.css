@@ -3,6 +3,9 @@
   color: #003554;
   text-align: center;
 }
+.contenedorRedesSociales thead {
+  display: none;
+}
 
 /*
                  _                      _                           _           
