@@ -81,6 +81,7 @@ div > img {
   width: 40px;
 }
 
+@media screen and (max-width: 480px) {
 .form-floating{
   width: 90%;
 }
@@ -92,7 +93,7 @@ div > img {
  #txtLogin, #txtContrasena{
   width: 100%;
  }
- 
+}
 /*------------------------------------------------------------------------*/
 
 /*Responsive Desktop (1920x1080)*/
