@@ -94,7 +94,12 @@ label {
   margin-left: 22%;
   z-index: 1;
 }
+@media screen and (max-width: 480px) {
 
+#txtUsuario{
+  width: 94%;
+}
+}
 /*------------------------------------------------------------------------*/
 
 /*Responsive Desktop (1920x1080)*/

@@ -77,7 +77,22 @@ div > img {
   color: inherit;
   color: #003554;
 }
+.iconLogin{
+  width: 40px;
+}
 
+.form-floating{
+  width: 90%;
+}
+
+ #lblTxtUsuario, #lblTxtContrasena {
+  width: 100%;
+ }
+
+ #txtLogin, #txtContrasena{
+  width: 100%;
+ }
+ 
 /*------------------------------------------------------------------------*/
 
 /*Responsive Desktop (1920x1080)*/
