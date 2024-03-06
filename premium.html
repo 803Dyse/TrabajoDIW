@@ -37,7 +37,8 @@
                 <div class="bar bar--2"></div>
                 <div class="bar bar--3"></div>
             </label>
-            <div class="enlaces-menu" role="navigation" aria-label="Menú de navegación principal" tabindex="1">
+            <div class="enlaces-menu" role="navigation" aria-label="Menú de navegación principal" role="menu"
+                tabindex="1">
                 <a href="explorar.html" role="menuitem" tabindex="2">Explorar</a>
                 <a href="premium.html" role="menuitem" tabindex="3">Premium</a>
                 <a href="login.html" role="menuitem" tabindex="4">Login</a>
@@ -63,7 +64,7 @@
 
         <section id="tablaPrecios" aria-label="Precios de planes Unmasked Premium">
             <table>
-                <caption>Precios de planes Unmasked Premium</caption>
+                <caption>Planes y precios de Unmasked Premium</caption>
                 <thead>
                     <tr>
                         <th scope="col">Duración</th>
@@ -106,35 +107,36 @@
             </div>
             <div id="datosDelUsuario">
                 <div class="inputPayment">
-                    <label for="cardholder" class="visually-hidden">Nombre en la tarjeta</label>
+                    <label id="cardholder-label" class="visually-hidden" for="cardholder">Nombre en la tarjeta</label>
                     <img src="img/premium/icon_Cardholder.svg" alt="icono de un muñeco" id="logoPayment"
                         class="logoPayments">
                     <input type="text" id="cardholder" required class="inputDeTarjeta form-control"
-                        placeholder="* Nombre en la tarjeta">
+                        placeholder="* Nombre en la tarjeta" aria-labelledby="cardholder-label">
                 </div>
                 <div class="inputPayment">
-                    <label for="cardNumber" class="visually-hidden">Número de tarjeta</label>
+                    <label id="cardNumber-label" class="visually-hidden" for="cardNumber">Número de tarjeta</label>
                     <img src="img/premium/icon_CardNumber.svg" alt="icono de una tarjeta de credito" id="logoPayment"
                         class="logoPayments">
                     <input type="text" id="cardNumber" required class="inputDeTarjeta form-control"
-                        placeholder="* Número de tarjeta">
+                        placeholder="* Número de tarjeta" aria-labelledby="cardNumber-label">
                 </div>
                 <div class="inputPayment">
-                    <label for="expirationDate" class="visually-hidden">Fecha de vencimiento</label>
+                    <label id="expirationDate-label" class="visually-hidden" for="expirationDate">Fecha de
+                        vencimiento</label>
                     <img src="img/premium/icon_Calendar.svg" alt="icono de un calendario" id="logoPayment"
                         class="logoPayments">
                     <input type="text" id="expirationDate" required class="inputDeTarjeta form-control"
-                        placeholder="* Fecha de vencimiento">
+                        placeholder="* Fecha de vencimiento" aria-labelledby="expirationDate-label">
                     <img src="img/login/icon_Password.svg" alt="icono de un candado" id="logoPayment"
                         class="logoPayments">
-                    <label for="cvv" class="visually-hidden">Fecha de vencimiento</label>
-
+                    <label id="cvv-label" class="visually-hidden" for="cvv">CVV</label>
                     <input type="number" required class="inputDeTarjeta form-control" id="cvv" min="3" max="3"
-                        placeholder="* 3 digitos del CVV">
+                        placeholder="* 3 digitos del CVV" aria-labelledby="cvv-label">
                 </div>
                 <input type="submit" class="btn btn-outline-dark" required value="Enviar"></input>
             </div>
         </form>
+
 
     </main>
     <footer id="footer" role="contentinfo">

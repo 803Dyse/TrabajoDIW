@@ -37,7 +37,7 @@
                 <div class="bar bar--2"></div>
                 <div class="bar bar--3"></div>
             </label>
-            <div class="enlaces-menu" role="navigation" aria-label="Menú de navegación principal">
+            <div class="enlaces-menu" role="navigation" aria-label="Menú de navegación principal" role="menu" tabindex="1">
                 <a href="explorar.html" role="menuitem" tabindex="1">Explorar</a>
                 <a href="premium.html" role="menuitem" tabindex="2">Premium</a>
                 <a href="login.html" role="menuitem" tabindex="3">Login</a>
@@ -72,13 +72,15 @@
                 <source src="video/backgroundVideo.wmv" type="video/wmv">
             </video>
 
-            <button id="suscribirse" class="btn btn-outline-dark" aria-label="Quiero ser premium">
-                <a href="premium.html" class="premium-link">Quiero ser premium</a>
-            </button>
-
-            <button id="registrarse" class="btn btn-outline-dark" aria-label="¿Eres nuevo? Regístrate ya">
-                <a href="registrar.html" class="register-link">¿Eres nuevo? Regístrate ya</a>
-            </button>
+            
+            <a href="premium.html" title="Quiero ser premium" id="registrarse" class="btn btn-outline-dark premium-link" aria-label="Quiero ser premium" >
+                Quiero ser premium
+            </a>
+            
+            <a href="registrar.html" title="¿Eres nuevo? Regístrate ya" id="suscribirse" class="btn btn-outline-dark register-link" aria-label="¿Eres nuevo? Regístrate ya">
+                ¿Eres nuevo? Regístrate ya
+            </a>
+            
 
         </div>
         <h1 id="tituloIndexDos" class="slide-right">...Tu Marca</h1>
@@ -86,10 +88,10 @@
         <h2 id="tituloParte2Index">¿No sabes por donde empezar? <br>Mira algunas de nuestras plantillas</h2>
         <div id="contenedor2">
             <p id="contenedor2p1">Ofrecemos el mejor servicio de la manera más comoda para obtener lo que necesitas. <a
-                    href="explorar.html" id="enlaceExplorar">Explora</a>!</p>
+                    href="explorar.html" id="enlaceExplorar" title="Explora nuestros productos">Explora</a>!</p>
             <img id="imgContenedor2" src="img/index/imagenPortfolioIndex2.webp"
                 alt="imagen ilustrativa de una persona utilizando un portatil">
-            <p id="contenedor2p2">¿Necesitas algo a medida? ¡<a href="contacto.html" id="enlaceContacto">Habla</a> con
+            <p id="contenedor2p2">¿Necesitas algo a medida? ¡<a href="contacto.html" title="Habla con nosotros" id="enlaceContacto">Habla</a> con
                 nosotros! </p>
         </div>
     </main>
