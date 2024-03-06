@@ -93,36 +93,38 @@
 
         <div id="formularioContacto">
             <form>
-                <legend>
-                    Tienes algun problema? Necesitas reportar algun error?
-                </legend>
-                <div class="contenedorInputs">
-                    <div class="inputFormContacto">
-                        <label for="nombre" class="visually-hidden">Nombre</label>
-                        <input type="text" name="Nombre" id="nombre" class="form-control required"
-                            placeholder="* Introduce tu nombre">
+                <fieldset>
+                    <legend>
+                        Tienes algún problema? ¿Necesitas reportar algún error?
+                    </legend>
+                    <div class="contenedorInputs">
+                        <div class="inputFormContacto">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" required
+                                placeholder="* Introduce tu nombre">
+                        </div>
+                        <div class="inputFormContacto">
+                            <label for="apellido">Primer apellido:</label>
+                            <input type="text" name="apellido" id="apellido" class="form-control" required
+                                placeholder="* Introduce tu primer apellido">
+                        </div>
+                        <div class="inputFormContacto">
+                            <label for="telefono">Número de teléfono:</label>
+                            <input type="tel" name="telefono" id="telefono" class="form-control" required
+                                placeholder="* Introduce tu número de teléfono">
+                        </div>
                     </div>
-                    <div class="inputFormContacto">
-                        <label for="apellido" class="visually-hidden">Primer apellido</label>
-                        <input type="text" name="Apellido" id="apellido" class="form-control required"
-                            placeholder="* Introduce tu primer apellido">
+            
+                    <div class="form-floating">
+                        <textarea name="txtUsuario" id="txtUsuario" class="form-control" required
+                            placeholder="* Escribe aquí"></textarea>
+                        <label for="txtUsuario" id="lblEscribeAqui">* Escribe aquí</label>
                     </div>
-                    <div class="inputFormContacto">
-                        <label for="telefono" class="visually-hidden">Número de teléfono</label>
-                        <input type="text" name="Telefono" id="telefono" class="form-control required"
-                            placeholder="* Introduce tu número de teléfono">
-                    </div>
-                </div>
-
-                <div class="form-floating">
-                    <textarea name="txtUsuario" id="txtUsuario" class="form-control" required
-                        placeholder="Escribe aqui"></textarea>
-                    <label for="txtUsuario" id="lblEscribeAqui">* Escribe aqui</label>
-                </div>
-                <br>
-                <button type="submit" required value="Enviar" id="btnEnviar"
-                    class="btn btn-outline-dark">Enviar</button>
+                    <br>
+                    <button type="submit" id="btnEnviar" class="btn btn-outline-dark">Enviar</button>
+                </fieldset>
             </form>
+            
         </div>
     </main>
     <footer id="footer" role="contentinfo">
