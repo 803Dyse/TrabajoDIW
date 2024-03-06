@@ -172,7 +172,7 @@
 #enlaceContacto,
 #enlaceExplorar {
   color: #003554;
-  text-decoration: none;
+  text-decoration: underline;
 }
 #videoFondo {
   position: absolute;
@@ -321,6 +321,6 @@
   #enlaceContacto,
   #enlaceExplorar {
     color: #003554;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
