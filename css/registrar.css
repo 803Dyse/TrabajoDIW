@@ -5,6 +5,8 @@ form {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 3px;
 }
+
+
 form > h1 {
   text-align: center;
   margin-bottom: 6%;
@@ -31,7 +33,7 @@ form > h1 {
 
 #msjEresMiembro > a,
 #msjEresMiembro > a:visited {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
   color: #003554;
 }
