@@ -12,7 +12,9 @@ form > h1 {
   margin-bottom: 6%;
   color: #003554;
 }
-
+form :focus {
+  outline: 2px solid #003554; 
+}
 .contenedorInput {
   display: flex;
   justify-content: center;
@@ -90,7 +92,9 @@ div > img {
   form {
     margin-top: 5%;
   }
-
+  form :focus {
+    outline: 2px solid #003554; 
+  }
   #titulo1 {
     margin-top: 20px;
     font-size: 36px;
