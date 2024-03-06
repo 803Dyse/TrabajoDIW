@@ -7,7 +7,6 @@ article {
 /*Selector para quitar estilos del <a>.*/
 h1 > a {
   color: #003554;
-  text-decoration: none;
 }
 
 #tituloExplorar {
