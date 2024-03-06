@@ -72,10 +72,19 @@ div > img {
     justify-content: center;
   }
 }
+
+#enlaceLogin {
+  text-decoration: underline;
+}
+
 /*------------------------------------------------------------------------*/
 
 /*Responsive Desktop (1920x1080)*/
 @media screen and (min-width: 480px) {
+  #enlaceLogin {
+    text-decoration: underline;
+  }
+
   form {
     margin-top: 5%;
   }
